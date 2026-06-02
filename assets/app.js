@@ -36,14 +36,16 @@
     // 2) generic events (GA4 + dataLayer)
     ev('start_trial_click', { value: c.PRICE_YEAR || '' });
 
-    // 3) hand off to the store via Adjust (with attribution)
+    // 3) hand off to the store
     var url = c.ADJUST_URL || '';
     if (url && url.indexOf('PASTE') < 0) {
-      window.location.href = url;
+      window.location.href = url;                 // Adjust link (with attribution) — preferred
     } else {
-      // preview mode (placeholders not filled yet) — show where it would go
-      var d = document.getElementById('pw-demo');
-      if (d) d.style.display = 'block';
+      // no Adjust yet → go to the real store by platform (works now, no attribution)
+      var ios = /iphone|ipad|ipod/i.test(navigator.userAgent || '');
+      var store = ios ? c.STORE_IOS : c.STORE_ANDROID;
+      if (store) { window.location.href = store; }
+      else { var d = document.getElementById('pw-demo'); if (d) d.style.display = 'block'; }
     }
   };
 
