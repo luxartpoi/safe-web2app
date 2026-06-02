@@ -4,66 +4,109 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SafeInCloud — Passwort-Manager</title>
-<meta name="description" content="Speichern, automatisch ausfüllen und synchronisieren Sie Ihre Passwörter sicher auf allen Geräten. Safe 14 Tage kostenlos testen.">
-<link rel="stylesheet" href="../assets/style.css">
+<meta name="description" content="Passwörter sicher speichern, ausfüllen und auf allen Geräten synchronisieren. Safe 14 Tage kostenlos testen.">
+<link rel="icon" href="../assets/brand/favicon-32x32.png">
+<link rel="stylesheet" href="../assets/main.css">
+<link rel="stylesheet" href="../assets/paywall.css">
 <script src="../assets/config.js"></script>
 </head>
 <body>
-<div class="wrap">
 
-  <div class="bar">
-    <div class="logo"><span class="mark">🛡</span> SafeInCloud</div>
-    <a class="mini" href="#" onclick="safeOpenPaywall();return false">Kostenlos testen</a>
+<header class="site-header">
+  <div class="header-container">
+    <a class="logo" href="#"><img src="../assets/brand/logo.png" alt="SafeInCloud">SafeInCloud</a>
+    <nav class="main-nav">
+      <a class="nav-button_primary" href="#" onclick="safeOpenPaywall();return false">Kostenlos testen</a>
+    </nav>
   </div>
+</header>
 
-  <div class="hero">
-    <h1>Schluss mit dem Passwort-Chaos.<br>Safe merkt sie sich.</h1>
-    <p>Speichern, automatisch ausfüllen und synchronisieren Sie Ihre Passwörter sicher — auf Handy, Computer und im Browser.</p>
-    <button class="cta" onclick="safeOpenPaywall()">Kostenlos testen</button>
-    <div class="subcta">14 Tage kostenlos · jederzeit kündbar</div>
-  </div>
+<main>
 
-  <div class="trust">
-    <span>⭐ <b>4.5</b>/5</span><span><b>50.000+</b> Nutzer</span><span><b>30 Tage</b> Geld-zurück</span>
-  </div>
-
-  <div class="feat">
-    <div class="item"><div class="ic">🔒</div><div><h3>Zero-Knowledge, 256-Bit-AES</h3><p>Nur Sie können Ihre Daten lesen — Ende-zu-Ende verschlüsselt.</p></div></div>
-    <div class="item"><div class="ic">📱</div><div><h3>Alle Ihre Geräte</h3><p>Handy, Computer, Mac, Windows und Browser — immer synchron.</p></div></div>
-    <div class="item"><div class="ic">⚡</div><div><h3>Import mit 1 Klick</h3><p>In Sekunden vom Browser oder einem anderen Manager umziehen.</p></div></div>
-    <div class="item"><div class="ic">🔑</div><div><h3>Autofill &amp; starke Passwörter</h3><p>Logins per Tipp ausfüllen und sichere Passwörter erzeugen.</p></div></div>
-  </div>
-
-  <div class="devices">
-    <div class="t">Für alle gemacht</div>
-    <div class="d">Einfach für Einsteiger, mächtig für Profis.</div>
-  </div>
-
-  <div class="sticky">
-    <button class="cta sm" onclick="safeOpenPaywall()">Kostenlos testen — 14 Tage gratis</button>
-  </div>
-
-  <div class="foot">SafeInCloud Passwort-Manager · <a href="#">Datenschutz</a> · <a href="#">AGB</a></div>
-
-  <!-- ===== FAKE PAYWALL ===== -->
-  <div class="pw" id="paywall"><div class="pw-in">
-    <button class="x" onclick="safeClosePaywall()">×</button>
-    <h2>Safe kostenlos testen</h2>
-    <div class="tl">
-      <div class="row on"><div class="line"></div><div class="dot">✓</div><div class="k">Heute</div><div class="v">Voller Premium-Zugang. Keine Zahlung jetzt.</div></div>
-      <div class="row"><div class="line"></div><div class="dot">🔔</div><div class="k">Tag 12</div><div class="v">Wir erinnern Sie vor Ablauf der Testphase.</div></div>
-      <div class="row"><div class="dot">★</div><div class="k">Tag 14</div><div class="v">Ihr Premium-Abo beginnt.</div></div>
+  <div class="hero-block-wrapper">
+    <div class="hero-block">
+      <div class="hero-content">
+        <h1>Schluss mit dem Passwort-Chaos. Safe merkt sie sich.</h1>
+        <p>Passwörter sicher speichern, automatisch ausfüllen und synchronisieren — auf Handy, Computer und im Browser. Ende-zu-Ende verschlüsselt, in Ihrer eigenen Cloud.</p>
+        <a class="button" href="#" onclick="safeOpenPaywall();return false">Kostenlos testen</a>
+        <p style="margin-top:14px;color:var(--text-muted);font-size:14px">14 Tage kostenlos · jederzeit kündbar</p>
+      </div>
+      <div class="hero-image"><img src="../assets/brand/hero-de.png" alt="SafeInCloud App"></div>
     </div>
-    <div class="price"><b>6,67 $/Monat</b> — jährlich <b>79,99 $</b> abgerechnet. Jederzeit kündbar.</div>
-    <div class="start">
-      <button class="cta" onclick="safeStartTrial()">Kostenlose Testphase starten</button>
-      <div class="lock">🔒 Keine Zahlung heute · jederzeit kündbar</div>
-      <div id="pw-demo">Demo: hier geht der Nutzer in den Store — Adjust-Link in <b>assets/config.js</b> eintragen.</div>
-      <div class="legal">Mit dem Fortfahren stimmen Sie den <a href="#">AGB</a> &amp; dem <a href="#">Datenschutz</a> zu. 30 Tage Geld-zurück-Garantie.</div>
-    </div>
-  </div></div>
+  </div>
 
-</div>
+  <section style="text-align:center">
+    <img src="../assets/brand/five_stars.png" alt="4.5 von 5" style="height:22px;width:auto;display:inline-block">
+    <p style="margin-top:10px;color:var(--text-secondary)"><b>50.000+</b> Nutzer · <b>4.5</b> Bewertung · <b>30 Tage</b> Geld-zurück · seit <b>2012</b></p>
+  </section>
+
+  <section class="benefits-block">
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <h3>Alle Geräte, immer synchron</h3>
+        <p class="benefit-subtitle">Handy, Computer, Mac, Windows und Browser — Ihre Passwörter überall, sofort.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>Zero-Knowledge, 256-Bit-Verschlüsselung</h3>
+        <p class="benefit-subtitle">Nur Sie können Ihre Daten lesen. Ende-zu-Ende verschlüsselt und in Ihrer eigenen Cloud — nie auf unseren Servern.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>Wechsel in einem Klick</h3>
+        <p class="benefit-subtitle">Import aus dem Browser oder einem anderen Passwort-Manager in Sekunden. Logins per Tipp ausfüllen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-split">
+    <div class="feature-content">
+      <h2>Funktioniert auf jedem Gerät</h2>
+      <p>Halten Sie Logins, Notizen und 2FA-Codes auf allen Handys und Computern synchron — und füllen Sie sie überall automatisch aus.</p>
+      <a class="button" href="#" onclick="safeOpenPaywall();return false">Kostenlos testen</a>
+    </div>
+    <div class="feature-image"><img src="../assets/brand/feat-cross.png" alt="Geräteübergreifend" style="border-radius:24px"></div>
+  </section>
+
+  <section class="final-cta-block">
+    <div class="cta-content">
+      <h2>Safe 14 Tage kostenlos testen</h2>
+      <p>Voller Premium-Zugang. Heute keine Zahlung. Jederzeit kündbar.</p>
+      <a class="button" href="#" onclick="safeOpenPaywall();return false">Kostenlos testen</a>
+    </div>
+    <div class="cta-image"><img src="../assets/brand/feat-encryption.png" alt="Verschlüsselter Tresor" style="border-radius:24px"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <div class="footer-brand"><a href="#"><img src="../assets/brand/logo.png" alt="">SafeInCloud</a></div>
+        <div class="footer-legal"><a href="#">Datenschutz</a><a href="#">AGB</a></div>
+        <div class="footer-copyright">© 2026 SafeInCloud · Passwort-Manager seit 2012</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FAKE PAYWALL ===== -->
+<div class="pw" id="paywall"><div class="pw-in">
+  <button class="x" onclick="safeClosePaywall()">×</button>
+  <h2>Safe kostenlos testen</h2>
+  <div class="tl">
+    <div class="row on"><div class="line"></div><div class="dot">✓</div><div class="k">Heute</div><div class="v">Voller Premium-Zugang. Keine Zahlung jetzt.</div></div>
+    <div class="row"><div class="line"></div><div class="dot">🔔</div><div class="k">Tag 12</div><div class="v">Wir erinnern Sie vor Ablauf der Testphase.</div></div>
+    <div class="row"><div class="dot">★</div><div class="k">Tag 14</div><div class="v">Ihr Premium-Abo beginnt.</div></div>
+  </div>
+  <div class="price"><b>6,67 $/Monat</b> — jährlich <b>79,99 $</b> abgerechnet. Jederzeit kündbar.</div>
+  <div class="start">
+    <a class="button" href="#" onclick="safeStartTrial();return false">Kostenlose Testphase starten</a>
+    <div class="lock">🔒 Keine Zahlung heute · jederzeit kündbar</div>
+    <div id="pw-demo">Demo: hier geht der Nutzer in den Store — Adjust-Link in <b>assets/config.js</b> eintragen.</div>
+    <div class="legal">Mit dem Fortfahren stimmen Sie den <a href="#">AGB</a> &amp; dem <a href="#">Datenschutz</a> zu. 30 Tage Geld-zurück-Garantie.</div>
+  </div>
+</div></div>
+
 <script src="../assets/app.js"></script>
 </body>
 </html>
