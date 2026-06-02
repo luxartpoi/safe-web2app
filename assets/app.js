@@ -36,17 +36,13 @@
     // 2) generic events (GA4 + dataLayer)
     ev('start_trial_click', { value: c.PRICE_YEAR || '' });
 
-    // 3) hand off to the store
-    var url = c.ADJUST_URL || '';
-    if (url && url.indexOf('PASTE') < 0) {
-      window.location.href = url;                 // Adjust link (with attribution) — preferred
-    } else {
-      // no Adjust yet → go to the real store by platform (works now, no attribution)
-      var ios = /iphone|ipad|ipod/i.test(navigator.userAgent || '');
-      var store = ios ? c.STORE_IOS : c.STORE_ANDROID;
-      if (store) { window.location.href = store; }
-      else { var d = document.getElementById('pw-demo'); if (d) d.style.display = 'block'; }
-    }
+    // 3) hand off to the store by platform — Adjust tracker (with attribution) if set, else store
+    var ios = /iphone|ipad|ipod/i.test(navigator.userAgent || '');
+    var adj = ios ? c.ADJUST_IOS : c.ADJUST_ANDROID;
+    var store = ios ? c.STORE_IOS : c.STORE_ANDROID;
+    var dest = (adj && adj.indexOf('app.adjust.com') >= 0) ? adj : store;
+    if (dest) { window.location.href = dest; }
+    else { var d = document.getElementById('pw-demo'); if (d) d.style.display = 'block'; }
   };
 
   // fire a page-view funnel event

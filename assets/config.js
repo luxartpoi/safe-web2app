@@ -3,9 +3,10 @@
 //  Это единственный файл, который нужно отредактировать перед запуском рекламы.
 // ============================================================================
 window.SAFE_CONFIG = {
-  // 1) Умная Adjust-ссылка (сама редиректит в App Store / Google Play по платформе).
-  //    Создаётся в Adjust: Campaign Lab -> Custom Links. См. FILL-IN.md шаг 2.
-  ADJUST_URL: "PASTE_ADJUST_TRACKER_URL",
+  // 1) Adjust-трекеры по платформе — переиспользованы ваши со страницы download
+  //    (токены 1x693k60 / 1xnq8bwy), метка кампании заменена на web2app_phase1.
+  ADJUST_IOS: "https://app.adjust.com/1x693k60?campaign=web2app_phase1&adgroup=landing&creative=fake_paywall&fallback=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fpasswords-passkeys-safe%2Fid895062927",
+  ADJUST_ANDROID: "https://app.adjust.com/1xnq8bwy?campaign=web2app_phase1&adgroup=landing&creative=fake_paywall&fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.safeincloud.free",
 
   // 2) Google Ads conversion (для оптимизации кампании под клик "Start Trial").
   //    Берётся при создании конверсии в Google Ads (Tools -> Conversions). См. FILL-IN.md шаг 3.
