@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SafeInCloud</title>
+<script>
+  // Send German-speaking browsers to /de/, everyone else to /en/.
+  var l = (navigator.language || 'en').toLowerCase();
+  location.replace(l.indexOf('de') === 0 ? './de/' : './en/');
+</script>
+<meta http-equiv="refresh" content="0; url=./en/">
+</head>
+<body>Redirecting… <a href="./en/">English</a> · <a href="./de/">Deutsch</a></body>
+</html>

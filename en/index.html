@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SafeInCloud — Password Manager</title>
+<meta name="description" content="Securely store, autofill and sync your passwords across all your devices. Try Safe free for 14 days.">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/config.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="bar">
+    <div class="logo"><span class="mark">🛡</span> SafeInCloud</div>
+    <a class="mini" href="#" onclick="safeOpenPaywall();return false">Try free</a>
+  </div>
+
+  <div class="hero">
+    <h1>Stop juggling passwords.<br>Safe remembers them.</h1>
+    <p>Securely store, autofill and sync your passwords across phone, computer and browser.</p>
+    <button class="cta" onclick="safeOpenPaywall()">Start Free Trial</button>
+    <div class="subcta">14-day free trial · cancel anytime</div>
+  </div>
+
+  <div class="trust">
+    <span>⭐ <b>4.5</b>/5</span><span><b>50,000+</b> users</span><span><b>30-day</b> money-back</span>
+  </div>
+
+  <div class="feat">
+    <div class="item"><div class="ic">🔒</div><div><h3>Zero-knowledge, 256-bit AES</h3><p>Only you can read your data — encrypted end-to-end.</p></div></div>
+    <div class="item"><div class="ic">📱</div><div><h3>All your devices</h3><p>Phone, computer, Mac, Windows and browser — always in sync.</p></div></div>
+    <div class="item"><div class="ic">⚡</div><div><h3>Import in 1 click</h3><p>Move from your browser or another manager in seconds.</p></div></div>
+    <div class="item"><div class="ic">🔑</div><div><h3>Autofill &amp; strong passwords</h3><p>One tap to fill logins and generate unbreakable passwords.</p></div></div>
+  </div>
+
+  <div class="devices">
+    <div class="t">Built for everyone</div>
+    <div class="d">Simple enough for first-timers, powerful enough for pros.</div>
+  </div>
+
+  <div class="sticky">
+    <button class="cta sm" onclick="safeOpenPaywall()">Start Free Trial — free for 14 days</button>
+  </div>
+
+  <div class="foot">SafeInCloud Password Manager · <a href="#">Privacy</a> · <a href="#">Terms</a></div>
+
+  <!-- ===== FAKE PAYWALL (mirrors the in-app Adapty paywall) ===== -->
+  <div class="pw" id="paywall"><div class="pw-in">
+    <button class="x" onclick="safeClosePaywall()">×</button>
+    <h2>Try Safe for Free</h2>
+    <div class="tl">
+      <div class="row on"><div class="line"></div><div class="dot">✓</div><div class="k">Today</div><div class="v">Full Premium access. No charge now.</div></div>
+      <div class="row"><div class="line"></div><div class="dot">🔔</div><div class="k">Day 12</div><div class="v">We'll remind you before your trial ends.</div></div>
+      <div class="row"><div class="dot">★</div><div class="k">Day 14</div><div class="v">Your Premium subscription begins.</div></div>
+    </div>
+    <div class="price"><b>$6.67/month</b> — billed yearly at <b>$79.99</b>. Cancel anytime.</div>
+    <div class="start">
+      <button class="cta" onclick="safeStartTrial()">Start My Free Trial</button>
+      <div class="lock">🔒 No charge today · cancel anytime</div>
+      <div id="pw-demo">Demo mode: here the user is sent to the store — paste your Adjust link in <b>assets/config.js</b>.</div>
+      <div class="legal">By continuing you agree to the <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a>. 30-day money-back guarantee.</div>
+    </div>
+  </div></div>
+
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>
