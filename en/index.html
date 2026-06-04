@@ -27,7 +27,7 @@
       <div class="hero-content">
         <h1>Stop juggling passwords. Safe remembers them.</h1>
         <p>Securely store, autofill and sync your passwords across phone, computer and browser. Encrypted end-to-end, in your own cloud.</p>
-        <a class="button" href="#" onclick="safeOpenPaywall();return false">Start Free Trial</a>
+        <a class="button" href="#" onclick="safeOpenTestimonial();return false">See how it works</a>
         <p style="margin-top:14px;color:var(--text-muted);font-size:14px">14-day free trial · cancel anytime</p>
       </div>
       <div class="hero-image"><img src="../assets/brand/hero-en.png" alt="SafeInCloud app"></div>
@@ -55,7 +55,7 @@
     <div class="feature-content">
       <h2>One tap and you're in</h2>
       <p>No more typing. Safe fills your logins and forms automatically — across apps and browsers, on every device.</p>
-      <a class="button" href="#" onclick="safeOpenPaywall();return false">Start Free Trial</a>
+      <a class="button" href="#" onclick="safeOpenTestimonial();return false">See how it works</a>
     </div>
     <div class="feature-image">
       <div class="demo-card" id="demo-card">
@@ -69,10 +69,7 @@
           <div class="dp-cred sel"><span class="ci"><span class="material-icons">vpn_key</span></span><div><b>john.appleseed@gmail.com</b><span>Gmail</span></div></div>
           <div class="dp-cred"><span class="ci"><span class="material-icons">vpn_key</span></span><div><b>j.appleseed@work.com</b><span>Gmail · Work</span></div></div>
         </div>
-        <div class="dp-kb">
-          <div class="dp-quick"><span class="dp-key"><span class="material-icons">vpn_key</span> Safe</span><span class="hint"></span></div>
-          <div class="dp-rows"><span class="kr"></span><span class="kr"></span><span class="kr"></span></div>
-        </div>
+        <div class="dp-kb"><span class="dp-key"><span class="material-icons">vpn_key</span> Safe</span></div>
       </div>
     </div>
   </section>
@@ -81,7 +78,7 @@
     <div class="cta-content">
       <h2>Try Safe free for 14 days</h2>
       <p>Full Premium access. No charge today. Cancel anytime.</p>
-      <a class="button" href="#" onclick="safeOpenPaywall();return false">Start Free Trial</a>
+      <a class="button" href="#" onclick="safeOpenTestimonial();return false">See how it works</a>
     </div>
     <div class="cta-image"><img src="../assets/brand/feat-encryption.png" alt="Encrypted vault" style="border-radius:24px"></div>
   </section>
@@ -100,7 +97,17 @@
   </div>
 </footer>
 
-<!-- ===== FAKE PAYWALL (mirrors the in-app Adapty paywall) ===== -->
+<!-- ===== SCREEN 2: TESTIMONIAL (edit the quote/author below) ===== -->
+<div class="tm" id="testimonial"><div class="tm-in">
+  <button class="x-dark" onclick="safeCloseTestimonial()">×</button>
+  <div class="tm-stars">★★★★★</div>
+  <!-- TESTIMONIAL: replace with your own words -->
+  <blockquote class="tm-quote">"I tried and ditched a dozen password managers — and still reused logins out of laziness, until one got leaked. Safe is the first one simple enough that I actually stick with it. Every account is unique now, and I never type a password again."</blockquote>
+  <div class="tm-author">— The SafeInCloud team</div>
+  <a class="button tm-cta" href="#" onclick="safeToPaywall();return false">Continue</a>
+</div></div>
+
+<!-- ===== SCREEN 3: PAYWALL (mirrors the in-app Adapty paywall) ===== -->
 <div class="pw" id="paywall"><div class="pw-in">
   <button class="x" onclick="safeClosePaywall()">×</button>
   <h2>Try Safe for Free</h2>
