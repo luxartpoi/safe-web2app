@@ -53,11 +53,21 @@
 
   <section class="feature-split">
     <div class="feature-content">
-      <h2>Funktioniert auf jedem Gerät</h2>
-      <p>Halten Sie Logins, Notizen und 2FA-Codes auf allen Handys und Computern synchron — und füllen Sie sie überall automatisch aus.</p>
+      <h2>Ein Tipp — und Sie sind drin</h2>
+      <p>Schluss mit dem Tippen. Safe füllt Ihre Logins und Formulare automatisch aus — in Apps und Browsern, auf jedem Gerät.</p>
       <a class="button" href="#" onclick="safeOpenPaywall();return false">Kostenlos testen</a>
     </div>
-    <div class="feature-image"><img src="../assets/brand/feat-cross.png" alt="Geräteübergreifend" style="border-radius:24px"></div>
+    <div class="feature-image">
+      <div class="demo-card" id="demo-card">
+        <div class="demo-bar"><span class="d r"></span><span class="d y"></span><span class="d g"></span></div>
+        <div class="demo-body">
+          <div class="demo-tap"><span class="material-icons">vpn_key</span> Safe</div>
+          <div class="demo-field"><label>E-Mail</label><div class="val">john.appleseed@gmail.com</div></div>
+          <div class="demo-field"><label>Passwort</label><div class="val">••••••••••••</div></div>
+          <button class="demo-btn" id="demo-btn" data-login="Anmelden" data-done="✓ Angemeldet">Anmelden</button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="final-cta-block">
@@ -101,6 +111,7 @@
   </div>
 </div></div>
 
+<script src="../assets/demo.js"></script>
 <script src="../assets/app.js"></script>
 </body>
 </html>

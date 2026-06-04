@@ -53,11 +53,21 @@
 
   <section class="feature-split">
     <div class="feature-content">
-      <h2>Works on every device</h2>
-      <p>Keep your logins, notes and 2FA codes in sync across all your phones and computers — and autofill them anywhere.</p>
+      <h2>One tap and you're in</h2>
+      <p>No more typing. Safe fills your logins and forms automatically — across apps and browsers, on every device.</p>
       <a class="button" href="#" onclick="safeOpenPaywall();return false">Start Free Trial</a>
     </div>
-    <div class="feature-image"><img src="../assets/brand/feat-cross.png" alt="Cross-platform sync" style="border-radius:24px"></div>
+    <div class="feature-image">
+      <div class="demo-card" id="demo-card">
+        <div class="demo-bar"><span class="d r"></span><span class="d y"></span><span class="d g"></span></div>
+        <div class="demo-body">
+          <div class="demo-tap"><span class="material-icons">vpn_key</span> Safe</div>
+          <div class="demo-field"><label>Email</label><div class="val">john.appleseed@gmail.com</div></div>
+          <div class="demo-field"><label>Password</label><div class="val">••••••••••••</div></div>
+          <button class="demo-btn" id="demo-btn" data-login="Log in" data-done="✓ Signed in">Log in</button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="final-cta-block">
@@ -101,6 +111,7 @@
   </div>
 </div></div>
 
+<script src="../assets/demo.js"></script>
 <script src="../assets/app.js"></script>
 </body>
 </html>
