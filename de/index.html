@@ -55,7 +55,7 @@
     <div class="feature-content">
       <h2>Ein Tipp — und Sie sind drin</h2>
       <p>Schluss mit dem Tippen. Safe füllt Ihre Logins und Formulare automatisch aus — in Apps und Browsern, auf jedem Gerät.</p>
-      <a class="button" href="#" onclick="safeOpenPaywall();return false">Kostenlos testen</a>
+      <a class="button" href="#" onclick="safeOpenTestimonial();return false">Kostenlos testen</a>
     </div>
     <div class="feature-image">
       <div class="demo-card" id="demo-card">
@@ -74,14 +74,6 @@
     </div>
   </section>
 
-  <section class="final-cta-block">
-    <div class="cta-content">
-      <h2>Safe 14 Tage kostenlos testen</h2>
-      <p>Voller Premium-Zugang. Heute keine Zahlung. Jederzeit kündbar.</p>
-      <a class="button" href="#" onclick="safeOpenPaywall();return false">Kostenlos testen</a>
-    </div>
-  </section>
-
 </main>
 
 <footer class="site-footer">
@@ -95,6 +87,17 @@
     </div>
   </div>
 </footer>
+
+<!-- ===== GRÜNDER-NOTIZ (zwischen Demo und Paywall) ===== -->
+<div class="tm" id="testimonial"><div class="tm-in">
+  <button class="x-dark" onclick="safeCloseTestimonial()">×</button>
+  <div class="tm-eyebrow">Warum ich Safe entwickelt habe</div>
+  <!-- GRÜNDER-NOTIZ: durch eigene Worte + echten Namen ersetzen -->
+  <blockquote class="tm-quote">"Ich habe Safe entwickelt, weil ich meine Passwörter nicht den Servern anderer anvertrauen wollte — nicht einmal denen einer Passwort-Firma. Also baute ich eine App, die alles in einem Tresor verschlüsselt, den nur Sie öffnen können, synchronisiert über Ihre eigene Cloud. Kein Firmenkonto, dem Sie vertrauen müssen — nur Ihr eigenes. Ich benutze sie seit 2012 jeden Tag — und genau deshalb entwickle ich sie weiter."</blockquote>
+  <div class="tm-author">— Der Gründer, SafeInCloud</div>
+  <div class="tm-author-sub">Passwort-Manager seit 2012</div>
+  <a class="button tm-cta" href="#" onclick="safeToPaywall();return false">Weiter</a>
+</div></div>
 
 <!-- ===== PAYWALL ===== -->
 <div class="pw" id="paywall"><div class="pw-in">

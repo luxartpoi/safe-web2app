@@ -55,7 +55,7 @@
     <div class="feature-content">
       <h2>One tap and you're in</h2>
       <p>No more typing. Safe fills your logins and forms automatically — across apps and browsers, on every device.</p>
-      <a class="button" href="#" onclick="safeOpenPaywall();return false">Start Free Trial</a>
+      <a class="button" href="#" onclick="safeOpenTestimonial();return false">Start Free Trial</a>
     </div>
     <div class="feature-image">
       <div class="demo-card" id="demo-card">
@@ -74,14 +74,6 @@
     </div>
   </section>
 
-  <section class="final-cta-block">
-    <div class="cta-content">
-      <h2>Try Safe free for 14 days</h2>
-      <p>Full Premium access. No charge today. Cancel anytime.</p>
-      <a class="button" href="#" onclick="safeOpenPaywall();return false">Start Free Trial</a>
-    </div>
-  </section>
-
 </main>
 
 <footer class="site-footer">
@@ -95,6 +87,17 @@
     </div>
   </div>
 </footer>
+
+<!-- ===== FOUNDER NOTE (shown between the demo and the paywall) ===== -->
+<div class="tm" id="testimonial"><div class="tm-in">
+  <button class="x-dark" onclick="safeCloseTestimonial()">×</button>
+  <div class="tm-eyebrow">Why I built Safe</div>
+  <!-- FOUNDER NOTE: replace with the founder's own words + real name -->
+  <blockquote class="tm-quote">"I built Safe because I didn't want to hand my passwords to anyone else's servers — not even a password company's. So I made an app that encrypts everything in a vault only you can unlock, synced through your own cloud. No company account to trust but your own. I've used it every day since 2012 — and that's why I keep building it."</blockquote>
+  <div class="tm-author">— The founder, SafeInCloud</div>
+  <div class="tm-author-sub">Password manager since 2012</div>
+  <a class="button tm-cta" href="#" onclick="safeToPaywall();return false">Continue</a>
+</div></div>
 
 <!-- ===== PAYWALL (mirrors the in-app Adapty paywall) ===== -->
 <div class="pw" id="paywall"><div class="pw-in">
