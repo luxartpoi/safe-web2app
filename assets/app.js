@@ -19,18 +19,6 @@
 
   function ev(name, params) { try { if (window.gtag) gtag('event', name, params || {}); } catch (e) {} }
 
-  // Screen 2 — testimonial (between landing and paywall)
-  window.safeOpenTestimonial = function () {
-    document.getElementById('testimonial').classList.add('open');
-    document.body.style.overflow = 'hidden';
-    ev('view_testimonial');
-  };
-  window.safeCloseTestimonial = function () {
-    document.getElementById('testimonial').classList.remove('open');
-    document.body.style.overflow = '';
-  };
-  window.safeToPaywall = function () { window.safeCloseTestimonial(); window.safeOpenPaywall(); };
-
   window.safeOpenPaywall = function () {
     document.getElementById('paywall').classList.add('open');
     document.body.style.overflow = 'hidden';

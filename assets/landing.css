@@ -59,13 +59,6 @@ main section { margin: 40px 0; }
 .demo-card.s-pick .dp-cred.sel { background: rgba(255,149,0,.13); }
 @keyframes demopulse { 0% { transform: scale(.92); } 50% { transform: scale(1.08); } 100% { transform: scale(1); } }
 
-/* Testimonial screen (between landing and paywall) */
-.tm { position: fixed; inset: 0; background: var(--bg-primary); z-index: 150; display: none; overflow-y: auto; }
-.tm.open { display: block; }
-.tm-in { max-width: 460px; margin: 0 auto; min-height: 100vh; padding: 24px; display: flex; flex-direction: column; justify-content: center; text-align: center; }
-.x-dark { position: absolute; top: 14px; right: 18px; background: none; border: 0; color: var(--text-muted); font-size: 28px; line-height: 1; cursor: pointer; }
-.tm-stars { color: var(--accent); font-size: 22px; letter-spacing: 3px; margin-bottom: 18px; }
-.tm-quote { font-size: 22px; line-height: 1.42; font-weight: 600; color: var(--text-primary); margin: 0 0 18px; }
-.tm-author { color: var(--text-secondary); font-size: 15px; margin-bottom: 30px; }
-.tm-cta { min-width: 240px; }
-@media (max-width: 768px) { .tm-quote { font-size: 19px; } }
+/* Smooth in-page scroll: hero "See how it works" -> demo animation section */
+html { scroll-behavior: smooth; }
+#demo { scroll-margin-top: 24px; }
