@@ -1,5 +1,15 @@
 /* Landing-specific polish: alignment, tighter rhythm, brand feature grid (2 per row). */
 
+/* Short funnel — screen 1: headline + autofill demo + forward CTA (no long scroll) */
+.hero-funnel { max-width: 480px; margin: 0 auto; padding: 36px 20px 44px; text-align: center; }
+.hero-funnel h1 { font-size: 30px; line-height: 1.16; margin: 0 0 12px; }
+.hf-sub { color: var(--text-secondary); font-size: 16px; line-height: 1.45; margin: 0 auto 26px; max-width: 38ch; }
+.hero-funnel .feature-image { margin-bottom: 26px; }
+.hf-cta { min-width: 260px; }
+.hf-trust { margin-top: 18px; color: var(--text-secondary); font-size: 13.5px; }
+.hf-trust b { color: var(--text-primary); }
+@media (max-width: 480px) { .hero-funnel h1 { font-size: 26px; } }
+
 .hero-content .button, .feature-content .button, .cta-content .button { min-width: 220px; text-align: center; }
 .final-cta-block .cta-content, .feature-split .feature-content { display: flex; flex-direction: column; }
 
