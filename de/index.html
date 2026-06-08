@@ -22,10 +22,19 @@
 
 <main>
 
+  <!-- 1. HERO — statisches Produktbild + CTA -->
   <section class="hero-funnel">
     <h1>Schluss mit dem Passwort-Chaos.<br>Safe merkt sie sich.</h1>
     <p class="hf-sub">Passwörter speichern, automatisch ausfüllen und synchronisieren — auf allen Geräten, Ende-zu-Ende verschlüsselt in Ihrer eigenen Cloud.</p>
+    <div class="hero-shot"><img src="../assets/brand/hero-de.png" alt="SafeInCloud App"></div>
+    <a class="button hf-cta" href="#" onclick="safeOpenTestimonial();return false">Kostenlos testen</a>
+    <p class="hf-trust"><b>4,7★</b> · <b>50.000+</b> Nutzer · iOS, Android, Mac &amp; Windows · seit <b>2012</b></p>
+  </section>
 
+  <!-- 2. ANIMATION — Autofill-Demo -->
+  <section class="demo-sec">
+    <h2 class="section-head">Ein Tipp — und Sie sind drin</h2>
+    <p class="section-sub">Schluss mit dem Tippen — Safe füllt Ihre Logins automatisch aus, auf jedem Gerät.</p>
     <div class="feature-image">
       <div class="demo-card" id="demo-card">
         <div class="dp-screen">
@@ -41,11 +50,9 @@
         <div class="dp-kb"><span class="dp-key"><span class="material-icons">vpn_key</span> Safe</span></div>
       </div>
     </div>
-
-    <a class="button hf-cta" href="#" onclick="safeOpenPaywall();return false">Kostenlos testen</a>
-    <p class="hf-trust"><b>4,7★</b> · <b>50.000+</b> Nutzer · iOS, Android, Mac &amp; Windows · seit <b>2012</b></p>
   </section>
 
+  <!-- 3. FEATURES -->
   <section class="feat-sec">
     <h2 class="section-head">Alles für Ihre Sicherheit</h2>
     <p class="section-sub">Einfach zu bedienen, stark verschlüsselt und voll unter Ihrer Kontrolle.</p>
@@ -59,26 +66,14 @@
     </div>
   </section>
 
-  <section class="reviews-sec">
-    <h2 class="section-head">Von Nutzern geliebt</h2>
-    <div class="rev-agg">
-      <img class="rev-stars" src="../assets/brand/five_stars.png" alt="5 Sterne">
-      <div class="rev-agg-line"><b>4,7★</b> App Store · <b>4,5★</b> Google Play · <span>50.000+</span> Nutzer</div>
-      <div class="rev-badges"><img src="../assets/brand/badge-app-store.png" alt="App Store"><img src="../assets/brand/badge-google-play.png" alt="Google Play"></div>
-    </div>
-    <div class="rev-list">
-      <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Ulf 60</span></div><p>"Super App, funktioniert einwandfrei. Man hat alles schnell auf jedem Gerät dabei und füllt ohne Probleme aus. Top!"</p></div>
-      <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Ony_9</span></div><p>"Ich nutze die App seit über zwei Jahren und hatte nie Probleme. Sehr sicher, generiert eigene Passwörter — wirklich jedem zu empfehlen."</p></div>
-      <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Paolo Aceto</span></div><p>"Seit Jahren zuverlässig auf allen Geräten — spitze und jeden Cent wert."</p></div>
-    </div>
-  </section>
-
+  <!-- 4. TRY SAFE — finaler CTA -->
   <section class="final-cta-block">
     <div class="cta-content">
-      <h2>Safe 14 Tage kostenlos testen</h2>
+      <h2>Safe kostenlos testen</h2>
       <p>Voller Premium-Zugang. Heute keine Zahlung. Jederzeit kündbar.</p>
-      <a class="button" href="#" onclick="safeOpenPaywall();return false">Kostenlos testen</a>
+      <a class="button" href="#" onclick="safeOpenTestimonial();return false">Kostenlos testen</a>
     </div>
+    <div class="cta-image"><img src="../assets/brand/feat-cross.png" alt="Auf allen Geräten synchron"></div>
   </section>
 
 </main>
@@ -95,7 +90,24 @@
   </div>
 </footer>
 
-<!-- ===== PAYWALL (schlanke Testphasen-Paywall) ===== -->
+<!-- ===== SCREEN 2: BEWERTUNGEN (zwischen Landing und Paywall) ===== -->
+<div class="tm" id="testimonial"><div class="tm-in">
+  <button class="x-dark" onclick="safeCloseTestimonial()">×</button>
+  <div class="tm-eyebrow">Von Nutzern geliebt</div>
+  <div class="rev-agg">
+    <img class="rev-stars" src="../assets/brand/five_stars.png" alt="5 Sterne">
+    <div class="rev-agg-line"><b>4,7★</b> App Store · <b>4,5★</b> Google Play · <span>50.000+</span> Nutzer</div>
+    <div class="rev-badges"><img src="../assets/brand/badge-app-store.png" alt="App Store"><img src="../assets/brand/badge-google-play.png" alt="Google Play"></div>
+  </div>
+  <div class="rev-list">
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Ulf 60</span></div><p>"Super App, funktioniert einwandfrei. Man hat alles schnell auf jedem Gerät dabei und füllt ohne Probleme aus. Top!"</p></div>
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Ony_9</span></div><p>"Ich nutze die App seit über zwei Jahren und hatte nie Probleme. Sehr sicher, generiert eigene Passwörter — wirklich jedem zu empfehlen."</p></div>
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Paolo Aceto</span></div><p>"Seit Jahren zuverlässig auf allen Geräten — spitze und jeden Cent wert."</p></div>
+  </div>
+  <a class="button tm-cta" href="#" onclick="safeToPaywall();return false">Weiter</a>
+</div></div>
+
+<!-- ===== SCREEN 3: PAYWALL (schlanke Testphasen-Paywall) ===== -->
 <div class="pw" id="paywall"><div class="pw-in">
   <button class="x" onclick="safeClosePaywall()">×</button>
   <h2>14 Tage kostenlos testen</h2>

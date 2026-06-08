@@ -22,10 +22,19 @@
 
 <main>
 
+  <!-- 1. HERO — static product shot + CTA -->
   <section class="hero-funnel">
     <h1>Stop juggling passwords.<br>Safe remembers them.</h1>
     <p class="hf-sub">Store, autofill and sync your passwords across all your devices — encrypted end-to-end, in your own cloud.</p>
+    <div class="hero-shot"><img src="../assets/brand/hero-en.png" alt="SafeInCloud app"></div>
+    <a class="button hf-cta" href="#" onclick="safeOpenTestimonial();return false">Start Free Trial</a>
+    <p class="hf-trust"><b>4.7★</b> · <b>50,000+</b> users · iOS, Android, Mac &amp; Windows · since <b>2012</b></p>
+  </section>
 
+  <!-- 2. ANIMATION — autofill demo -->
+  <section class="demo-sec">
+    <h2 class="section-head">One tap and you're in</h2>
+    <p class="section-sub">No more typing — Safe fills your logins automatically, on every device.</p>
     <div class="feature-image">
       <div class="demo-card" id="demo-card">
         <div class="dp-screen">
@@ -41,11 +50,9 @@
         <div class="dp-kb"><span class="dp-key"><span class="material-icons">vpn_key</span> Safe</span></div>
       </div>
     </div>
-
-    <a class="button hf-cta" href="#" onclick="safeOpenPaywall();return false">Start Free Trial</a>
-    <p class="hf-trust"><b>4.7★</b> · <b>50,000+</b> users · iOS, Android, Mac &amp; Windows · since <b>2012</b></p>
   </section>
 
+  <!-- 3. FEATURES -->
   <section class="feat-sec">
     <h2 class="section-head">Everything you need to stay secure</h2>
     <p class="section-sub">Simple to use, strongly encrypted, and fully under your control.</p>
@@ -59,26 +66,14 @@
     </div>
   </section>
 
-  <section class="reviews-sec">
-    <h2 class="section-head">Loved by users</h2>
-    <div class="rev-agg">
-      <img class="rev-stars" src="../assets/brand/five_stars.png" alt="5 stars">
-      <div class="rev-agg-line"><b>4.7★</b> App Store · <b>4.5★</b> Google Play · <span>50,000+</span> users</div>
-      <div class="rev-badges"><img src="../assets/brand/badge-app-store.png" alt="App Store"><img src="../assets/brand/badge-google-play.png" alt="Google Play"></div>
-    </div>
-    <div class="rev-list">
-      <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Ken Paine</span></div><p>"Love this app — so simple to use and syncs across platforms. I'd be lost without it."</p></div>
-      <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Cosmic-Clara</span></div><p>"Been using it for years and I wouldn't be without it. Reliable and simple — easy to add, generate and edit passwords. Highly recommend."</p></div>
-      <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">WhateverWorks9999</span></div><p>"Keeps me perfectly synced between two devices, and my database is safe in the cloud — even if both were destroyed, I'd still have all my passwords."</p></div>
-    </div>
-  </section>
-
+  <!-- 4. TRY SAFE — final CTA -->
   <section class="final-cta-block">
     <div class="cta-content">
-      <h2>Try Safe free for 14 days</h2>
+      <h2>Try Safe free</h2>
       <p>Full Premium access. No charge today. Cancel anytime.</p>
-      <a class="button" href="#" onclick="safeOpenPaywall();return false">Start Free Trial</a>
+      <a class="button" href="#" onclick="safeOpenTestimonial();return false">Start Free Trial</a>
     </div>
+    <div class="cta-image"><img src="../assets/brand/feat-cross.png" alt="Sync across all your devices"></div>
   </section>
 
 </main>
@@ -95,7 +90,24 @@
   </div>
 </footer>
 
-<!-- ===== PAYWALL (lean trial paywall) ===== -->
+<!-- ===== SCREEN 2: REVIEWS (between landing and paywall) ===== -->
+<div class="tm" id="testimonial"><div class="tm-in">
+  <button class="x-dark" onclick="safeCloseTestimonial()">×</button>
+  <div class="tm-eyebrow">Loved by users</div>
+  <div class="rev-agg">
+    <img class="rev-stars" src="../assets/brand/five_stars.png" alt="5 stars">
+    <div class="rev-agg-line"><b>4.7★</b> App Store · <b>4.5★</b> Google Play · <span>50,000+</span> users</div>
+    <div class="rev-badges"><img src="../assets/brand/badge-app-store.png" alt="App Store"><img src="../assets/brand/badge-google-play.png" alt="Google Play"></div>
+  </div>
+  <div class="rev-list">
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Ken Paine</span></div><p>"Love this app — so simple to use and syncs across platforms. I'd be lost without it."</p></div>
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Cosmic-Clara</span></div><p>"Been using it for years and I wouldn't be without it. Reliable and simple — easy to add, generate and edit passwords. Highly recommend."</p></div>
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">WhateverWorks9999</span></div><p>"Keeps me perfectly synced between two devices, and my database is safe in the cloud — even if both were destroyed, I'd still have all my passwords."</p></div>
+  </div>
+  <a class="button tm-cta" href="#" onclick="safeToPaywall();return false">Continue</a>
+</div></div>
+
+<!-- ===== SCREEN 3: PAYWALL (lean trial paywall) ===== -->
 <div class="pw" id="paywall"><div class="pw-in">
   <button class="x" onclick="safeClosePaywall()">×</button>
   <h2>Start your 14-day free trial</h2>
