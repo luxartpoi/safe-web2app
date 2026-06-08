@@ -22,3 +22,17 @@
 .pw .legal{text-align:center;color:#64748b;font-size:11px;margin-top:14px}
 .pw .legal a{color:#94a3b8}
 #pw-demo{display:none;text-align:center;color:#fbbf24;font-size:13px;margin-top:14px;border:1px dashed #475569;border-radius:10px;padding:10px}
+
+/* RoboForm-style plan card */
+.plan-card{position:relative;background:#121a2e;border:1px solid #2a3550;border-radius:16px;padding:20px 18px 16px;margin:0 0 20px}
+.plan-badge{position:absolute;top:-11px;left:18px;background:var(--accent);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;padding:4px 11px;border-radius:999px}
+.plan-name{font-size:23px;font-weight:800;color:#fff;margin-top:4px}
+.plan-sub{color:#94a3b8;font-size:13.5px;margin-bottom:14px}
+.plan-price{display:flex;align-items:baseline;gap:5px}
+.plan-price b{font-size:34px;font-weight:800;color:#fff;line-height:1}
+.plan-price span{color:#94a3b8;font-size:15px}
+.plan-renew{color:#cbd5e1;font-size:13px;margin:7px 0 0}
+.plan-feats{list-style:none;margin:14px 0 0;padding:0}
+.plan-feats li{position:relative;padding:6px 0 6px 26px;font-size:14px;color:#e2e8f0}
+.plan-feats li::before{content:"✓";position:absolute;left:0;top:6px;color:#22c55e;font-weight:800}
+.tl-head{color:#94a3b8;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin:0 4px 12px}

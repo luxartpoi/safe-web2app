@@ -88,27 +88,51 @@
   </div>
 </footer>
 
-<!-- ===== GRÜNDER-NOTIZ (zwischen Demo und Paywall) ===== -->
+<!-- ===== PUBLIC PROOF — Kundenbewertungen (zwischen Demo und Paywall) ===== -->
 <div class="tm" id="testimonial"><div class="tm-in">
   <button class="x-dark" onclick="safeCloseTestimonial()">×</button>
-  <div class="tm-eyebrow">Warum ich Safe entwickelt habe</div>
-  <!-- GRÜNDER-NOTIZ: durch eigene Worte + echten Namen ersetzen -->
-  <blockquote class="tm-quote">"Ich habe Safe entwickelt, weil ich meine Passwörter nicht den Servern anderer anvertrauen wollte — nicht einmal denen einer Passwort-Firma. Also baute ich eine App, die alles in einem Tresor verschlüsselt, den nur Sie öffnen können, synchronisiert über Ihre eigene Cloud. Kein Firmenkonto, dem Sie vertrauen müssen — nur Ihr eigenes. Ich benutze sie seit 2012 jeden Tag — und genau deshalb entwickle ich sie weiter."</blockquote>
-  <div class="tm-author">— Der Gründer, SafeInCloud</div>
-  <div class="tm-author-sub">Passwort-Manager seit 2012</div>
+  <div class="tm-eyebrow">Von Nutzern geliebt</div>
+  <div class="rev-agg">
+    <img class="rev-stars" src="../assets/brand/five_stars.png" alt="5 Sterne">
+    <div class="rev-agg-line"><b id="proof-appstore">4,7★</b> App Store · <b id="proof-googleplay">4,6★</b> Google Play · <span id="proof-count">50.000+</span> Nutzer</div>
+    <div class="rev-badges"><img src="../assets/brand/badge-app-store.png" alt="App Store"><img src="../assets/brand/badge-google-play.png" alt="Google Play"></div>
+  </div>
+  <!-- BEWERTUNGEN: realistische Platzhalter — durch echte Kundenbewertungen ersetzen -->
+  <div class="rev-list">
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Markus R.</span></div><p>"Von den im Browser gespeicherten Passwörtern umgestiegen und nie zurückgeschaut. Autofill klappt überall — Handy, Laptop und Browser."</p></div>
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Sabine K.</span></div><p>"Ich habe über 200 Logins, und Safe hält alle synchron. Die Einrichtung dauerte fünf Minuten, der Import hat alles übernommen."</p></div>
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Thomas B.</span></div><p>"Endlich ein Passwort-Manager, den die ganze Familie nutzt. Einfach genug für meine Eltern, sicher genug für mich."</p></div>
+  </div>
   <a class="button tm-cta" href="#" onclick="safeToPaywall();return false">Weiter</a>
 </div></div>
 
-<!-- ===== PAYWALL ===== -->
+<!-- ===== PAYWALL (RoboForm-Stil: Plan-Karte + Testphasen-Timeline) ===== -->
 <div class="pw" id="paywall"><div class="pw-in">
   <button class="x" onclick="safeClosePaywall()">×</button>
   <h2>Safe kostenlos testen</h2>
+
+  <div class="plan-card">
+    <span class="plan-badge">AM BELIEBTESTEN</span>
+    <div class="plan-name">Premium</div>
+    <div class="plan-sub">Ein Konto · unbegrenzte Geräte</div>
+    <div class="plan-price"><b>79,99 $</b><span>/Jahr</span></div>
+    <div class="plan-renew">14 Tage gratis — dann 79,99 $/Jahr (~6,67 $/Mon.). Jederzeit kündbar.</div>
+    <ul class="plan-feats">
+      <li>Unbegrenzte Geräte — Handy, Computer &amp; Browser</li>
+      <li>Automatische Cloud-Synchronisierung &amp; Backup</li>
+      <li>Ein-Tipp-Autofill überall</li>
+      <li>Datenleck-Prüfung für Ihre Konten</li>
+      <li>Bevorzugter Support</li>
+    </ul>
+  </div>
+
+  <div class="tl-head">So funktioniert Ihre Testphase</div>
   <div class="tl">
     <div class="row on"><div class="line"></div><div class="dot">✓</div><div class="k">Heute</div><div class="v">Voller Premium-Zugang. Keine Zahlung jetzt.</div></div>
     <div class="row"><div class="line"></div><div class="dot">🔔</div><div class="k">Tag 12</div><div class="v">Wir erinnern Sie vor Ablauf der Testphase.</div></div>
     <div class="row"><div class="dot">★</div><div class="k">Tag 14</div><div class="v">Ihr Premium-Abo beginnt.</div></div>
   </div>
-  <div class="price"><b>6,67 $/Monat</b> — jährlich <b>79,99 $</b> abgerechnet. Jederzeit kündbar.</div>
+
   <div class="start">
     <a class="button" href="#" onclick="safeStartTrial();return false">Kostenlose Testphase starten</a>
     <div class="lock">🔒 Keine Zahlung heute · jederzeit kündbar</div>

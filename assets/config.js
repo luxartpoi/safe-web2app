@@ -24,5 +24,18 @@ window.SAFE_CONFIG = {
   // Оффер на пейволе (можно поменять текст здесь же).
   PRICE_YEAR: "$79.99",
   PRICE_MONTH: "$6.67",
-  TRIAL_DAYS: 14
+  TRIAL_DAYS: 14,
+
+  // Рейтинги для экрана отзывов — РАЗНЫЕ по сторам/гео (App Store vs Google Play).
+  // Подставь сюда РЕАЛЬНЫЕ цифры. Ключ = ?geo=us|uk|de|at|ch в URL (его ставит Final URL
+  // кампании), иначе fallback по языку страницы (de -> "de", остальное -> "default").
+  // Сейчас плейсхолдеры — поменяешь в одну строку, без пересборки.
+  PROOF_RATINGS: {
+    "default": { appstore: "4.7", googleplay: "4.6", count: "50,000+" },
+    "us":      { appstore: "4.7", googleplay: "4.6", count: "50,000+" },
+    "uk":      { appstore: "4.7", googleplay: "4.6", count: "50,000+" },
+    "de":      { appstore: "4,7", googleplay: "4,6", count: "50.000+" },
+    "at":      { appstore: "4,7", googleplay: "4,6", count: "50.000+" },
+    "ch":      { appstore: "4,7", googleplay: "4,6", count: "50.000+" }
+  }
 };

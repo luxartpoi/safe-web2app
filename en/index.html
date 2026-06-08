@@ -88,27 +88,51 @@
   </div>
 </footer>
 
-<!-- ===== FOUNDER NOTE (shown between the demo and the paywall) ===== -->
+<!-- ===== PUBLIC PROOF — customer reviews (shown between the demo and the paywall) ===== -->
 <div class="tm" id="testimonial"><div class="tm-in">
   <button class="x-dark" onclick="safeCloseTestimonial()">×</button>
-  <div class="tm-eyebrow">Why I built Safe</div>
-  <!-- FOUNDER NOTE: replace with the founder's own words + real name -->
-  <blockquote class="tm-quote">"I built Safe because I didn't want to hand my passwords to anyone else's servers — not even a password company's. So I made an app that encrypts everything in a vault only you can unlock, synced through your own cloud. No company account to trust but your own. I've used it every day since 2012 — and that's why I keep building it."</blockquote>
-  <div class="tm-author">— The founder, SafeInCloud</div>
-  <div class="tm-author-sub">Password manager since 2012</div>
+  <div class="tm-eyebrow">Loved by users</div>
+  <div class="rev-agg">
+    <img class="rev-stars" src="../assets/brand/five_stars.png" alt="5 stars">
+    <div class="rev-agg-line"><b id="proof-appstore">4.7★</b> App Store · <b id="proof-googleplay">4.6★</b> Google Play · <span id="proof-count">50,000+</span> users</div>
+    <div class="rev-badges"><img src="../assets/brand/badge-app-store.png" alt="App Store"><img src="../assets/brand/badge-google-play.png" alt="Google Play"></div>
+  </div>
+  <!-- REVIEWS: realistic placeholders — replace with real customer reviews -->
+  <div class="rev-list">
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Marcus R.</span></div><p>"Switched from my browser's saved passwords and never looked back. Autofill just works everywhere — phone, laptop and browser."</p></div>
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Priya S.</span></div><p>"I have over 200 logins and Safe keeps them all in sync. Setup took five minutes and the import pulled everything in."</p></div>
+    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Tom B.</span></div><p>"Finally a password manager my whole family actually uses. Simple enough for my parents, secure enough for me."</p></div>
+  </div>
   <a class="button tm-cta" href="#" onclick="safeToPaywall();return false">Continue</a>
 </div></div>
 
-<!-- ===== PAYWALL (mirrors the in-app Adapty paywall) ===== -->
+<!-- ===== PAYWALL (RoboForm-style plan card + trial timeline) ===== -->
 <div class="pw" id="paywall"><div class="pw-in">
   <button class="x" onclick="safeClosePaywall()">×</button>
   <h2>Try Safe for Free</h2>
+
+  <div class="plan-card">
+    <span class="plan-badge">MOST POPULAR</span>
+    <div class="plan-name">Premium</div>
+    <div class="plan-sub">One account · unlimited devices</div>
+    <div class="plan-price"><b>$79.99</b><span>/year</span></div>
+    <div class="plan-renew">14 days free — then $79.99/year (~$6.67/mo). Cancel anytime.</div>
+    <ul class="plan-feats">
+      <li>Unlimited devices — phone, computer &amp; browser</li>
+      <li>Automatic cloud sync &amp; backup</li>
+      <li>One-tap autofill everywhere</li>
+      <li>Breach check for your accounts</li>
+      <li>Priority support</li>
+    </ul>
+  </div>
+
+  <div class="tl-head">How your free trial works</div>
   <div class="tl">
     <div class="row on"><div class="line"></div><div class="dot">✓</div><div class="k">Today</div><div class="v">Full Premium access. No charge now.</div></div>
     <div class="row"><div class="line"></div><div class="dot">🔔</div><div class="k">Day 12</div><div class="v">We'll remind you before your trial ends.</div></div>
     <div class="row"><div class="dot">★</div><div class="k">Day 14</div><div class="v">Your Premium subscription begins.</div></div>
   </div>
-  <div class="price"><b>$6.67/month</b> — billed yearly at <b>$79.99</b>. Cancel anytime.</div>
+
   <div class="start">
     <a class="button" href="#" onclick="safeStartTrial();return false">Start My Free Trial</a>
     <div class="lock">🔒 No charge today · cancel anytime</div>

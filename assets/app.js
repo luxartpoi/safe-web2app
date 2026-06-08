@@ -19,11 +19,11 @@
 
   function ev(name, params) { try { if (window.gtag) gtag('event', name, params || {}); } catch (e) {} }
 
-  // Founder note (shown between the demo and the paywall)
+  // Public-proof screen — customer reviews (between demo and paywall)
   window.safeOpenTestimonial = function () {
     document.getElementById('testimonial').classList.add('open');
     document.body.style.overflow = 'hidden';
-    ev('view_testimonial');
+    ev('view_proof');
   };
   window.safeCloseTestimonial = function () {
     document.getElementById('testimonial').classList.remove('open');
@@ -56,6 +56,19 @@
     if (dest) { window.location.href = dest; }
     else { var d = document.getElementById('pw-demo'); if (d) d.style.display = 'block'; }
   };
+
+  // Geo/platform-aware ratings on the proof screen (?geo=us|uk|de|at|ch, else by page lang)
+  (function applyProof() {
+    var sets = c.PROOF_RATINGS; if (!sets) return;
+    var m = location.search.match(/[?&]geo=([a-z]{2})/i);
+    var geo = m ? m[1].toLowerCase()
+                : ((document.documentElement.lang || 'en').toLowerCase() === 'de' ? 'de' : 'default');
+    var r = sets[geo] || sets['default']; if (!r) return;
+    function set(id, val, suffix) { var el = document.getElementById(id); if (el && val != null) el.textContent = val + (suffix || ''); }
+    set('proof-appstore', r.appstore, '★');
+    set('proof-googleplay', r.googleplay, '★');
+    set('proof-count', r.count, '');
+  })();
 
   // fire a page-view funnel event
   ev('view_landing', { lang: document.documentElement.lang || 'en' });
