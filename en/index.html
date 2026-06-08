@@ -42,8 +42,43 @@
       </div>
     </div>
 
-    <a class="button hf-cta" href="#" onclick="safeOpenTestimonial();return false">See how it works</a>
+    <a class="button hf-cta" href="#" onclick="safeOpenPaywall();return false">Start Free Trial</a>
     <p class="hf-trust"><b>4.7★</b> · <b>50,000+</b> users · iOS, Android, Mac &amp; Windows · since <b>2012</b></p>
+  </section>
+
+  <section class="feat-sec">
+    <h2 class="section-head">Everything you need to stay secure</h2>
+    <p class="section-sub">Simple to use, strongly encrypted, and fully under your control.</p>
+    <div class="feat-grid-2">
+      <div class="feature-card"><span class="material-icons feature-icon">key</span><h3>Passwords &amp; passkeys, safely stored</h3><p>Everything is encrypted inside your personal vault.</p></div>
+      <div class="feature-card"><span class="material-icons feature-icon">auto_fix_high</span><h3>One-tap autofill</h3><p>Sign in instantly in apps and browsers across your devices.</p></div>
+      <div class="feature-card"><span class="material-icons feature-icon">devices</span><h3>Works on all your devices</h3><p>iOS, Android, Mac and Windows — phone, tablet and desktop, always in sync.</p></div>
+      <div class="feature-card"><span class="material-icons feature-icon">cloud_upload</span><h3>Backup to your own cloud</h3><p>Auto backup to Google Drive, OneDrive, Dropbox or WebDAV.</p></div>
+      <div class="feature-card"><span class="material-icons feature-icon">verified_user</span><h3>Breach check</h3><p>See if your accounts appear in known leaks (powered by Have I Been Pwned).</p></div>
+      <div class="feature-card"><span class="material-icons feature-icon">lock</span><h3>Strong encryption by default</h3><p>Bank-grade protection with AES-256 encryption.</p></div>
+    </div>
+  </section>
+
+  <section class="reviews-sec">
+    <h2 class="section-head">Loved by users</h2>
+    <div class="rev-agg">
+      <img class="rev-stars" src="../assets/brand/five_stars.png" alt="5 stars">
+      <div class="rev-agg-line"><b>4.7★</b> App Store · <b>4.5★</b> Google Play · <span>50,000+</span> users</div>
+      <div class="rev-badges"><img src="../assets/brand/badge-app-store.png" alt="App Store"><img src="../assets/brand/badge-google-play.png" alt="Google Play"></div>
+    </div>
+    <div class="rev-list">
+      <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Ken Paine</span></div><p>"Love this app — so simple to use and syncs across platforms. I'd be lost without it."</p></div>
+      <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Cosmic-Clara</span></div><p>"Been using it for years and I wouldn't be without it. Reliable and simple — easy to add, generate and edit passwords. Highly recommend."</p></div>
+      <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">WhateverWorks9999</span></div><p>"Keeps me perfectly synced between two devices, and my database is safe in the cloud — even if both were destroyed, I'd still have all my passwords."</p></div>
+    </div>
+  </section>
+
+  <section class="final-cta-block">
+    <div class="cta-content">
+      <h2>Try Safe free for 14 days</h2>
+      <p>Full Premium access. No charge today. Cancel anytime.</p>
+      <a class="button" href="#" onclick="safeOpenPaywall();return false">Start Free Trial</a>
+    </div>
   </section>
 
 </main>
@@ -60,56 +95,20 @@
   </div>
 </footer>
 
-<!-- ===== PUBLIC PROOF — customer reviews (shown between the demo and the paywall) ===== -->
-<div class="tm" id="testimonial"><div class="tm-in">
-  <button class="x-dark" onclick="safeCloseTestimonial()">×</button>
-  <div class="tm-eyebrow">Loved by users</div>
-  <div class="rev-agg">
-    <img class="rev-stars" src="../assets/brand/five_stars.png" alt="5 stars">
-    <div class="rev-agg-line"><b>4.7★</b> App Store · <b>4.5★</b> Google Play · <span>50,000+</span> users</div>
-    <div class="rev-badges"><img src="../assets/brand/badge-app-store.png" alt="App Store"><img src="../assets/brand/badge-google-play.png" alt="Google Play"></div>
-  </div>
-  <!-- REVIEWS: real App Store / Google Play reviews -->
-  <div class="rev-list">
-    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Ken Paine</span><span class="rev-src">App Store · US</span></div><p>"Love this app — so simple to use and syncs across platforms. I'd be lost without it."</p></div>
-    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">Cosmic-Clara</span><span class="rev-src">App Store · UK</span></div><p>"Been using it for years and I wouldn't be without it. Reliable and simple — easy to add, generate and edit passwords. Highly recommend."</p></div>
-    <div class="rev"><div class="rev-top"><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"><span class="rev-name">WhateverWorks9999</span><span class="rev-src">App Store · US</span></div><p>"Keeps me perfectly synced between two devices, and my database is safe in the cloud — even if both were destroyed, I'd still have all my passwords."</p></div>
-  </div>
-  <a class="button tm-cta" href="#" onclick="safeToPaywall();return false">Continue</a>
-</div></div>
-
-<!-- ===== PAYWALL (RoboForm-style plan card + trial timeline) ===== -->
+<!-- ===== PAYWALL (lean trial paywall) ===== -->
 <div class="pw" id="paywall"><div class="pw-in">
   <button class="x" onclick="safeClosePaywall()">×</button>
-  <h2>Try Safe for Free</h2>
-
-  <div class="plan-card">
-    <span class="plan-badge">MOST POPULAR</span>
-    <div class="plan-name">Premium</div>
-    <div class="plan-sub">One account · unlimited devices</div>
-    <div class="plan-price"><b>$79.99</b><span>/year</span></div>
-    <div class="plan-renew">14 days free — then $79.99/year (~$6.67/mo). Cancel anytime.</div>
-    <ul class="plan-feats">
-      <li>Unlimited devices — phone, computer &amp; browser</li>
-      <li>Automatic cloud sync &amp; backup</li>
-      <li>One-tap autofill everywhere</li>
-      <li>Breach check for your accounts</li>
-      <li>Priority support</li>
-    </ul>
-  </div>
-
-  <div class="tl-head">How your free trial works</div>
+  <h2>Start your 14-day free trial</h2>
   <div class="tl">
     <div class="row on"><div class="line"></div><div class="dot">✓</div><div class="k">Today</div><div class="v">Full Premium access. No charge now.</div></div>
     <div class="row"><div class="line"></div><div class="dot">🔔</div><div class="k">Day 12</div><div class="v">We'll remind you before your trial ends.</div></div>
     <div class="row"><div class="dot">★</div><div class="k">Day 14</div><div class="v">Your Premium subscription begins.</div></div>
   </div>
-
+  <div class="pw-price">Then <b>$79.99</b>/year (~$6.67/mo). Cancel anytime.</div>
   <div class="start">
-    <a class="button" href="#" onclick="safeStartTrial();return false">Start My Free Trial</a>
+    <a class="button" href="#" onclick="safeStartTrial();return false">Start Free Trial</a>
     <div class="lock">🔒 No charge today · cancel anytime</div>
     <div id="pw-demo">Demo mode: here the user is sent to the store — paste your Adjust link in <b>assets/config.js</b>.</div>
-    <div class="legal">By continuing you agree to the <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a>.</div>
   </div>
 </div></div>
 

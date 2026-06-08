@@ -2,8 +2,8 @@
    Uses brand --accent (#ff9500) from main.css for the CTA. */
 .pw{position:fixed;inset:0;background:#0b1020;color:#fff;z-index:200;display:none;overflow-y:auto}
 .pw.open{display:block}
-.pw-in{max-width:440px;margin:0 auto;min-height:100vh;padding:18px 22px 28px;display:flex;flex-direction:column}
-.pw .x{align-self:flex-end;background:none;border:0;color:#94a3b8;font-size:28px;line-height:1;cursor:pointer;padding:2px 6px}
+.pw-in{max-width:440px;margin:0 auto;min-height:100vh;padding:18px 22px 28px;display:flex;flex-direction:column;justify-content:center}
+.pw .x{position:absolute;top:14px;right:16px;background:none;border:0;color:#94a3b8;font-size:28px;line-height:1;cursor:pointer;padding:2px 6px}
 .pw h2{font-size:26px;text-align:center;margin:4px 0 24px;color:#fff}
 .tl{position:relative;margin:0 4px 22px;padding-left:34px}
 .tl .row{position:relative;padding:0 0 22px}
@@ -16,7 +16,7 @@
 .tl .v{color:#94a3b8;font-size:13.5px}
 .pw .price{text-align:center;color:#cbd5e1;font-size:14px;margin-bottom:8px}
 .pw .price b{color:#fff}
-.pw .start{margin-top:auto}
+.pw .start{margin-top:30px}
 .pw .start .button{display:block;width:100%;text-align:center;font-size:17px;padding:16px}
 .pw .lock{display:flex;align-items:center;justify-content:center;gap:6px;color:#22c55e;font-size:13px;margin-top:12px}
 .pw .legal{text-align:center;color:#64748b;font-size:11px;margin-top:14px}
@@ -36,3 +36,7 @@
 .plan-feats li{position:relative;padding:6px 0 6px 26px;font-size:14px;color:#e2e8f0}
 .plan-feats li::before{content:"✓";position:absolute;left:0;top:6px;color:#22c55e;font-weight:800}
 .tl-head{color:#94a3b8;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin:0 4px 12px}
+
+/* lean paywall price line */
+.pw-price{text-align:center;color:#cbd5e1;font-size:14.5px;margin:18px 0 4px}
+.pw-price b{color:#fff}

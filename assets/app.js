@@ -19,18 +19,6 @@
 
   function ev(name, params) { try { if (window.gtag) gtag('event', name, params || {}); } catch (e) {} }
 
-  // Public-proof screen — customer reviews (between demo and paywall)
-  window.safeOpenTestimonial = function () {
-    document.getElementById('testimonial').classList.add('open');
-    document.body.style.overflow = 'hidden';
-    ev('view_proof');
-  };
-  window.safeCloseTestimonial = function () {
-    document.getElementById('testimonial').classList.remove('open');
-    document.body.style.overflow = '';
-  };
-  window.safeToPaywall = function () { window.safeCloseTestimonial(); window.safeOpenPaywall(); };
-
   window.safeOpenPaywall = function () {
     document.getElementById('paywall').classList.add('open');
     document.body.style.overflow = 'hidden';
