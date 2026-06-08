@@ -1,42 +1,30 @@
-/* Fake "Try Safe for Free" paywall overlay — mirrors the in-app Adapty paywall.
-   Uses brand --accent (#ff9500) from main.css for the CTA. */
-.pw{position:fixed;inset:0;background:#0b1020;color:#fff;z-index:200;display:none;overflow-y:auto}
+/* "Try Safe for Free" paywall overlay — light, matches the white site.
+   Uses brand tokens from main.css (--accent #ff9500, text/border vars). */
+.pw{position:fixed;inset:0;background:var(--bg-primary);color:var(--text-primary);z-index:200;display:none;overflow-y:auto}
 .pw.open{display:block}
 .pw-in{max-width:440px;margin:0 auto;min-height:100vh;padding:18px 22px 28px;display:flex;flex-direction:column;justify-content:center}
-.pw .x{position:absolute;top:14px;right:16px;background:none;border:0;color:#94a3b8;font-size:28px;line-height:1;cursor:pointer;padding:2px 6px}
-.pw h2{font-size:26px;text-align:center;margin:4px 0 24px;color:#fff}
-.tl{position:relative;margin:0 4px 22px;padding-left:34px}
+.pw .x{position:absolute;top:14px;right:16px;background:none;border:0;color:var(--text-muted);font-size:28px;line-height:1;cursor:pointer;padding:2px 6px}
+.pw h2{font-size:26px;text-align:center;margin:4px 0 26px;color:var(--text-primary)}
+
+/* trial timeline */
+.tl{position:relative;margin:0 6px;padding-left:34px}
 .tl .row{position:relative;padding:0 0 22px}
 .tl .row:last-child{padding-bottom:0}
-.tl .dot{position:absolute;left:-34px;top:1px;width:22px;height:22px;border-radius:50%;background:#1e293b;border:2px solid #334155;display:flex;align-items:center;justify-content:center;font-size:12px}
-.tl .row.on .dot{background:var(--accent);border-color:var(--accent)}
-.tl .line{position:absolute;left:-24px;top:22px;bottom:0;width:2px;background:#334155}
+.tl .dot{position:absolute;left:-34px;top:1px;width:22px;height:22px;border-radius:50%;background:var(--bg-alt);border:2px solid var(--border-medium);display:flex;align-items:center;justify-content:center;font-size:12px}
+.tl .row.on .dot{background:var(--accent);border-color:var(--accent);color:#fff}
+.tl .line{position:absolute;left:-24px;top:22px;bottom:0;width:2px;background:var(--border-medium)}
 .tl .row:last-child .line{display:none}
-.tl .k{font-weight:700;font-size:15px;color:#fff}
-.tl .v{color:#94a3b8;font-size:13.5px}
-.pw .price{text-align:center;color:#cbd5e1;font-size:14px;margin-bottom:8px}
-.pw .price b{color:#fff}
+.tl .k{font-weight:700;font-size:15px;color:var(--text-primary)}
+.tl .v{color:var(--text-secondary);font-size:13.5px}
+
+/* price line */
+.pw-price{text-align:center;color:var(--text-secondary);font-size:14.5px;margin:22px 0 0}
+.pw-price b{color:var(--text-primary)}
+
+/* CTA + reassurance */
 .pw .start{margin-top:30px}
 .pw .start .button{display:block;width:100%;text-align:center;font-size:17px;padding:16px}
-.pw .lock{display:flex;align-items:center;justify-content:center;gap:6px;color:#22c55e;font-size:13px;margin-top:12px}
-.pw .legal{text-align:center;color:#64748b;font-size:11px;margin-top:14px}
-.pw .legal a{color:#94a3b8}
-#pw-demo{display:none;text-align:center;color:#fbbf24;font-size:13px;margin-top:14px;border:1px dashed #475569;border-radius:10px;padding:10px}
-
-/* RoboForm-style plan card */
-.plan-card{position:relative;background:#121a2e;border:1px solid #2a3550;border-radius:16px;padding:20px 18px 16px;margin:0 0 20px}
-.plan-badge{position:absolute;top:-11px;left:18px;background:var(--accent);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;padding:4px 11px;border-radius:999px}
-.plan-name{font-size:23px;font-weight:800;color:#fff;margin-top:4px}
-.plan-sub{color:#94a3b8;font-size:13.5px;margin-bottom:14px}
-.plan-price{display:flex;align-items:baseline;gap:5px}
-.plan-price b{font-size:34px;font-weight:800;color:#fff;line-height:1}
-.plan-price span{color:#94a3b8;font-size:15px}
-.plan-renew{color:#cbd5e1;font-size:13px;margin:7px 0 0}
-.plan-feats{list-style:none;margin:14px 0 0;padding:0}
-.plan-feats li{position:relative;padding:6px 0 6px 26px;font-size:14px;color:#e2e8f0}
-.plan-feats li::before{content:"✓";position:absolute;left:0;top:6px;color:#22c55e;font-weight:800}
-.tl-head{color:#94a3b8;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin:0 4px 12px}
-
-/* lean paywall price line */
-.pw-price{text-align:center;color:#cbd5e1;font-size:14.5px;margin:18px 0 4px}
-.pw-price b{color:#fff}
+.pw .lock{display:flex;align-items:center;justify-content:center;gap:6px;color:#16a34a;font-size:13px;margin-top:12px}
+.pw .legal{text-align:center;color:var(--text-muted);font-size:11px;margin-top:14px}
+.pw .legal a{color:var(--text-secondary)}
+#pw-demo{display:none;text-align:center;color:#b45309;font-size:13px;margin-top:14px;border:1px dashed var(--border-medium);border-radius:10px;padding:10px}

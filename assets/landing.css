@@ -1,7 +1,7 @@
 /* Landing-specific polish: alignment, tighter rhythm, brand feature grid (2 per row). */
 
 /* Short funnel — screen 1: headline + autofill demo + forward CTA (no long scroll) */
-.hero-funnel { max-width: 480px; margin: 0 auto; padding: 36px 20px 44px; text-align: center; }
+.hero-funnel { max-width: 480px; margin: 0 auto 60px; padding: 32px 20px 0; text-align: center; }
 .hero-funnel h1 { font-size: 30px; line-height: 1.16; margin: 0 0 12px; }
 .hf-sub { color: var(--text-secondary); font-size: 16px; line-height: 1.45; margin: 0 auto 26px; max-width: 38ch; }
 .hero-funnel .feature-image { margin-bottom: 26px; }
@@ -25,8 +25,8 @@
 /* tighter rhythm + hero image flush to the bottom of its block (no floating gap) */
 .hero-block-wrapper { padding: 44px 20px 0; margin-bottom: 0; }
 .hero-image img { margin-bottom: 0; display: block; }
-main section { margin: 40px 0; }
-.final-cta-block { margin: 40px 0; padding: 40px 28px; }
+main section { margin: 0 0 60px; }
+.final-cta-block { margin: 0 0 60px; padding: 36px 24px; }
 .section-head { text-align: center; margin-bottom: 8px; }
 .section-sub { text-align: center; color: var(--text-secondary); margin-bottom: 24px; }
 
@@ -42,7 +42,6 @@ main section { margin: 40px 0; }
   .hero-content .button, .feature-content .button, .cta-content .button { display: block; width: 100%; min-width: 0; }
   .hero-content p { margin-left: auto; margin-right: auto; max-width: 38ch; }
   .feature-content, .cta-content { align-items: center; }
-  main section { margin: 30px 0; }
   .feat-grid-2 { gap: 11px; }
   .feat-grid-2 .feature-card { padding: 15px 13px; }
   .feat-grid-2 .feature-icon { font-size: 32px; margin-bottom: 8px; }
