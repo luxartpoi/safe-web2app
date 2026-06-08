@@ -80,5 +80,6 @@ html { scroll-behavior: smooth; }
 .rev-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
 .rev-s { height: 12px; }
 .rev-name { font-weight: 700; font-size: 13px; color: var(--text-primary); }
+.rev-src { margin-left: auto; color: var(--text-muted); font-size: 11px; }
 .rev p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--text-secondary); }
 .tm-cta { min-width: 240px; align-self: center; }
