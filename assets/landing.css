@@ -27,8 +27,8 @@
 .hero-image img { margin-bottom: 0; display: block; }
 main section { margin: 0 0 60px; }
 .final-cta-block { margin: 0 0 60px; padding: 36px 24px; }
-.section-head { text-align: center; margin-bottom: 8px; }
-.section-sub { text-align: center; color: var(--text-secondary); margin-bottom: 24px; }
+.section-head { text-align: center; margin-bottom: 8px; text-wrap: balance; }
+.section-sub { text-align: center; color: var(--text-secondary); margin-bottom: 24px; text-wrap: balance; }
 
 /* feature grid — brand .feature-card style, but 2 per row (incl. mobile) */
 .feat-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -84,19 +84,19 @@ html { scroll-behavior: smooth; }
 /* Screen 2 — reviews overlay (between landing and paywall) */
 .tm { position: fixed; inset: 0; background: var(--bg-primary); z-index: 150; display: none; overflow-y: auto; }
 .tm.open { display: block; }
-.tm-in { max-width: 460px; margin: 0 auto; min-height: 100vh; padding: 56px 24px 32px; display: flex; flex-direction: column; justify-content: center; }
+.tm-in { max-width: 460px; margin: 0 auto; min-height: 100vh; padding: 24px; display: flex; flex-direction: column; justify-content: center; }
 .x-dark { position: absolute; top: 14px; right: 18px; background: none; border: 0; color: var(--text-muted); font-size: 28px; line-height: 1; cursor: pointer; }
-.tm-eyebrow { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; text-align: center; }
-.rev-agg { text-align: center; margin-bottom: 22px; }
-.rev-stars { height: 20px; margin-bottom: 8px; }
+.tm-eyebrow { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; text-align: center; }
+.rev-agg { text-align: center; margin-bottom: 16px; }
+.rev-stars { height: 19px; margin-bottom: 6px; }
 .rev-agg-line { color: var(--text-secondary); font-size: 14px; }
 .rev-agg-line b { color: var(--text-primary); }
-.rev-badges { display: flex; gap: 10px; justify-content: center; margin-top: 12px; }
-.rev-badges img { height: 26px; }
-.rev-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
-.rev { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; padding: 13px 15px; box-shadow: 0 2px 10px rgba(0,0,0,.04); }
-.rev-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.rev-badges { display: flex; gap: 10px; justify-content: center; margin-top: 10px; }
+.rev-badges img { height: 24px; }
+.rev-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+.rev { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; padding: 11px 14px; box-shadow: 0 2px 10px rgba(0,0,0,.04); }
+.rev-top { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
 .rev-s { height: 12px; }
 .rev-name { font-weight: 700; font-size: 13.5px; color: var(--text-primary); }
-.rev p { margin: 0; font-size: 14px; line-height: 1.5; color: var(--text-secondary); }
+.rev p { margin: 0; font-size: 13.5px; line-height: 1.45; color: var(--text-secondary); }
 .tm-cta { min-width: 240px; align-self: center; }
