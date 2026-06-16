@@ -43,18 +43,37 @@
 
   // The conversion: user taps "Start Free Trial" on the fake paywall.
   window.safeStartTrial = function () {
-    // 1) Google Ads conversion (optimization signal)
-    if (hasAds) ev('conversion', { send_to: c.GOOGLE_ADS_ID + '/' + c.GOOGLE_ADS_LABEL });
-    // 2) generic events (GA4 + dataLayer)
-    ev('start_trial_click', { value: c.PRICE_YEAR || '' });
-
-    // 3) hand off to the store by platform — Adjust tracker (with attribution) if set, else store
+    // Where we hand off: Adjust tracker (with attribution) if set, else the store.
     var ios = /iphone|ipad|ipod/i.test(navigator.userAgent || '');
     var adj = ios ? c.ADJUST_IOS : c.ADJUST_ANDROID;
     var store = ios ? c.STORE_IOS : c.STORE_ANDROID;
     var dest = (adj && adj.indexOf('app.adjust.com') >= 0) ? adj : store;
-    if (dest) { window.location.href = dest; }
-    else { var d = document.getElementById('pw-demo'); if (d) d.style.display = 'block'; }
+
+    // Navigate ONLY after the conversion/event beacon has been sent — an immediate
+    // redirect can cut off the hit before it leaves the browser (then the click is
+    // never attributed to its gclid). Fallback timer covers a missing/slow callback.
+    var done = false;
+    function go() {
+      if (done) return; done = true;
+      if (dest) { window.location.href = dest; }
+      else { var d = document.getElementById('pw-demo'); if (d) d.style.display = 'block'; }
+    }
+
+    // 1) funnel signal (GA4) — always
+    ev('start_trial_click', { value: c.PRICE_YEAR || '' });
+
+    // 2) Google Ads conversion (the optimization signal) — wait for it before leaving
+    if (window.gtag && hasAds) {
+      gtag('event', 'conversion', {
+        send_to: c.GOOGLE_ADS_ID + '/' + c.GOOGLE_ADS_LABEL,
+        event_callback: go
+      });
+      setTimeout(go, 1200);            // fallback if the callback never fires
+    } else if (window.gtag) {
+      setTimeout(go, 350);             // no Ads ID yet — let the GA4 hit flush, then go
+    } else {
+      go();
+    }
   };
 
   // fire a page-view funnel event
