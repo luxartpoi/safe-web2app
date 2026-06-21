@@ -99,4 +99,9 @@ html { scroll-behavior: smooth; }
 .rev-s { height: 12px; }
 .rev-name { font-weight: 700; font-size: 13.5px; color: var(--text-primary); }
 .rev p { margin: 0; font-size: 13.5px; line-height: 1.45; color: var(--text-secondary); }
+/* single big review (screen 2 — onboarding redesign 16.06) */
+.rev.big { text-align: center; padding: 24px 22px; }
+.rev.big .rev-s { height: 17px; margin-bottom: 14px; }
+.rev.big p { font-size: 17px; line-height: 1.55; color: var(--text-primary); margin: 0 0 14px; }
+.rev.big .rev-name { display: block; font-size: 14px; font-weight: 600; color: var(--text-secondary); }
 .tm-cta { min-width: 240px; align-self: center; }
