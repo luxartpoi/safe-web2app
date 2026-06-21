@@ -13,8 +13,8 @@ window.SAFE_CONFIG = {
   GOOGLE_ADS_ID: "AW-XXXXXXXXXX",
   GOOGLE_ADS_LABEL: "XXXXXXXXXXXXXXXXXX",
 
-  // 3) GA4 — уже ваш, менять не надо.
-  GA4_ID: "G-MXRMB3HQKP",
+  // 3) GA4 — отдельное свойство web2app (выдал Андрей 21.06). НЕ свойство основного сайта.
+  GA4_ID: "G-KZWN24KFV7",
 
   // Fallback стор-ссылки (пока нет Adjust): кнопка ведёт в нужный стор по платформе.
   // ⚠️ Проверь, что это правильные (подписочные) приложения — есть и легаси «SafeInCloud 1».

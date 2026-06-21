@@ -41,4 +41,4 @@ ADJUST_URL:        "https://app.adjust.com/…"   // шаг 2
 GOOGLE_ADS_ID:     "AW-…"                        // шаг 3
 GOOGLE_ADS_LABEL:  "…"                            // шаг 3
 ```
-GA4 (`G-MXRMB3HQKP`) уже прошит. Оффер/цену при желании меняем там же (`PRICE_YEAR`, `TRIAL_DAYS`) и в тексте `en|de/index.html`.
+GA4 (`G-KZWN24KFV7` — отдельное свойство web2app) уже прошит. Оффер/цену при желании меняем там же (`PRICE_YEAR`, `TRIAL_DAYS`) и в тексте `en|de/index.html`.
