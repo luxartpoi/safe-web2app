@@ -31,7 +31,7 @@ html, body { background:var(--lp-bg); }
 .dp-sheet { position:absolute; left:0; right:0; bottom:0; z-index:5; background:#fff; border-top:1px solid #ece8e2; border-radius:16px 16px 0 0; box-shadow:0 -10px 28px rgba(0,0,0,.14); padding:8px 8px 12px; transform:translateY(100%); transition:transform .3s; }
 .demo-card.s-list .dp-sheet { transform:translateY(0); }
 .demo-card.s-list .dp-kb { opacity:0; }
-.dp-cred { display:flex; align-items:center; gap:10px; padding:9px 10px; border-radius:10px; transition:background .2s; }
+.dp-cred { display:flex; align-items:center; gap:10px; padding:9px 10px; border-radius:10px; transition:background .2s; text-align:left; }
 .dp-cred .ci { width:28px; height:28px; border-radius:8px; background:rgba(255,149,0,.14); display:flex; align-items:center; justify-content:center; color:var(--accent); }
 .dp-cred .ci .material-icons { font-size:15px; }
 .dp-cred b { display:block; font-size:12.5px; color:#1b1b1f; }
