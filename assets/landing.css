@@ -40,8 +40,8 @@ html, body { background:var(--lp-bg); }
 @keyframes demopulse { 0%{transform:scale(.92)} 50%{transform:scale(1.08)} 100%{transform:scale(1)} }
 
 /* ===== overlays (reviews / paywall) — fit the whole screen into the viewport, no scroll ===== */
-.tm, .pw { position:fixed; inset:0; background:var(--lp-bg); z-index:150; display:none; }
+.tm, .pw { position:fixed; inset:0; background:var(--lp-bg); z-index:150; display:none; overflow:hidden; }
 .pw { z-index:200; }
 .tm.open, .pw.open { display:flex; align-items:flex-start; justify-content:center; }
 .ov-screen { position:relative; line-height:0; }
-.ov-screen img { display:block; width:auto; height:auto; max-width:min(100vw,440px); max-height:100vh; max-height:100dvh; }
+.ov-screen img { display:block; width:auto; height:auto; max-width:min(100vw,440px); max-height:100vh; max-height:100svh; }
