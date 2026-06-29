@@ -4,7 +4,7 @@ html, body { background:var(--lp-bg); }
 .lp2 { max-width:440px; margin:0 auto; }
 
 .screen { position:relative; display:block; line-height:0; }
-.screen > img, .ov-screen > img { width:100%; display:block; }
+.screen > img { width:100%; display:block; }
 
 /* transparent tap zones over the buttons baked into the images */
 .hot { position:absolute; display:block; cursor:pointer; z-index:2; }
@@ -39,8 +39,9 @@ html, body { background:var(--lp-bg); }
 .demo-card.s-pick .dp-cred.sel { background:rgba(255,149,0,.13); }
 @keyframes demopulse { 0%{transform:scale(.92)} 50%{transform:scale(1.08)} 100%{transform:scale(1)} }
 
-/* ===== overlays (reviews / paywall) carry the full-screen image ===== */
-.tm, .pw { position:fixed; inset:0; background:var(--lp-bg); z-index:150; display:none; overflow-y:auto; }
+/* ===== overlays (reviews / paywall) — fit the whole screen into the viewport, no scroll ===== */
+.tm, .pw { position:fixed; inset:0; background:var(--lp-bg); z-index:150; display:none; }
 .pw { z-index:200; }
-.tm.open, .pw.open { display:block; }
-.ov-screen { max-width:440px; margin:0 auto; position:relative; line-height:0; }
+.tm.open, .pw.open { display:flex; align-items:center; justify-content:center; }
+.ov-screen { position:relative; line-height:0; }
+.ov-screen img { display:block; width:auto; height:auto; max-width:min(100vw,440px); max-height:100vh; max-height:100dvh; }
