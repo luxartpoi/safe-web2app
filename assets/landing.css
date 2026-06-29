@@ -1,9 +1,11 @@
 /* ===== web2app landing — pixel-exact via Igor's screen exports ===== */
-:root { --lp-bg:#FBF9F6; }
+:root { --lp-bg:#FBF9F6; --fw:min(100vw, 440px, calc(var(--vph, 100svh) * 1760 / 3227)); }
 html, body { background:var(--lp-bg); margin:0; }
 .lp2 { max-width:440px; margin:0 auto; padding:0; }
 
-.screen { position:relative; display:block; line-height:0; }
+/* landing-bottom (features + mid-CTA): cap to the same width as the fit-to-viewport
+   screens (--fw) so its CTA matches the hero/overlay CTAs instead of being full-width. */
+.screen { position:relative; display:block; line-height:0; max-width:var(--fw); margin:0 auto; }
 .screen > img { width:100%; display:block; }
 
 /* hero = fit-to-viewport first screen so "Start free" is always above the browser chrome
@@ -12,7 +14,7 @@ html, body { background:var(--lp-bg); margin:0; }
 .hero-screen { display:flex; align-items:flex-start; justify-content:center; height:var(--vph,100svh); margin:0; }
 .hero-fit { position:relative; display:inline-block; line-height:0; }
 .hero-fit img { width:auto; height:auto; max-width:min(100vw,440px); max-height:var(--vph,100svh); display:block; }
-.demo-head { display:block; width:100%; max-width:440px; margin:0 auto; }
+.demo-head { display:block; width:100%; max-width:var(--fw); margin:0 auto; }
 
 /* transparent tap zones over the buttons baked into the images */
 .hot { position:absolute; display:block; cursor:pointer; z-index:2; }
