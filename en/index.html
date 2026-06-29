@@ -14,117 +14,105 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-container">
-    <a class="logo" href="#"><img src="../assets/brand/logo.png" alt="SafeInCloud">SafeInCloud</a>
-  </div>
-</header>
+<main class="lp">
 
-<main>
+  <div class="lp-logo"><img src="../assets/brand/logo.png" alt="">Safe In Cloud</div>
 
-  <!-- 1. HERO — static product shot + CTA -->
-  <section class="hero-funnel">
-    <h1>Stop juggling passwords.<br>Safe remembers them.</h1>
-    <p class="hf-sub">Store, autofill and sync your passwords across all your devices — encrypted end-to-end, in your own cloud.</p>
-    <div class="hero-shot"><img src="../assets/brand/hero-en.png" alt="SafeInCloud app"></div>
-    <a class="button hf-cta" href="#" onclick="safeOpenTestimonial();return false">Start Free</a>
-    <p class="hf-trust"><b>4.8★</b> · <b>1,000,000+</b> users · iOS, Android, Mac &amp; Windows · since <b>2012</b></p>
+  <!-- HERO -->
+  <section class="lp-hero">
+    <h1>Password Manager</h1>
+    <div class="lp-devices"><img src="../assets/brand/hero-devices.png" alt="SafeInCloud — passwords and security check on your phone"></div>
+    <p class="lp-sub">Sync and autofill passwords everywhere&nbsp;– encrypted in your own cloud.</p>
+    <div class="lp-pills">
+      <div class="pill"><b>1M+</b><span class="lbl">Users</span></div>
+      <div class="pill"><span class="plats">
+        <svg viewBox="0 0 24 24"><path d="M17.05 12.04c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.23 2.6 1.3-.05 1.79-.84 3.36-.84 1.57 0 2.01.84 3.39.81 1.4-.03 2.29-1.27 3.15-2.53.99-1.45 1.4-2.85 1.42-2.93-.03-.01-2.73-1.05-2.76-4.16zM14.53 4.6c.71-.86 1.19-2.06 1.06-3.25-1.02.04-2.26.68-2.99 1.54-.66.76-1.23 1.98-1.08 3.15 1.14.09 2.3-.58 3.01-1.44z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zm-4.97-5.84l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.96 0-1.86.23-2.66.63L7.85.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31C6.97 3.26 6 5.01 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M3 5.7l7.6-1.04v7.14H3V5.7zm8.7-1.18L21 3.2v9.42h-9.3V4.52zM3 12.6h7.6v7.14L3 18.7v-6.1zm8.7 0H21v9.2l-9.3-1.3v-7.9z"/></svg>
+      </span><span class="lbl">Platforms</span></div>
+      <div class="pill"><b>4.8&nbsp;<span class="st">★</span></b><span class="lbl">Rating</span></div>
+    </div>
+    <a class="button lp-cta" href="#" onclick="safeOpenTestimonial();return false">Start free →</a>
   </section>
 
-  <!-- 2. ANIMATION — autofill demo -->
-  <section class="demo-sec">
-    <h2 class="section-head">One tap and you're in</h2>
-    <p class="section-sub">No more typing — Safe fills your logins automatically, on every device.</p>
-    <div class="feature-image">
-      <div class="demo-card" id="demo-card">
-        <div class="dp-screen">
-          <div class="dp-title">Sign in</div>
-          <div class="dp-field"><span class="dp-lab">Email</span><div class="dp-input"><span class="v">john.appleseed@gmail.com</span></div></div>
-          <div class="dp-field"><span class="dp-lab">Password</span><div class="dp-input"><span class="v">••••••••••••</span></div></div>
-          <button class="dp-btn" id="demo-btn" data-login="Log in" data-done="✓ Signed in">Log in</button>
-        </div>
-        <div class="dp-sheet">
-          <div class="dp-cred sel"><span class="ci"><span class="material-icons">vpn_key</span></span><div><b>john.appleseed@gmail.com</b><span>Gmail</span></div></div>
-          <div class="dp-cred"><span class="ci"><span class="material-icons">vpn_key</span></span><div><b>j.appleseed@work.com</b><span>Gmail · Work</span></div></div>
-        </div>
-        <div class="dp-kb"><span class="dp-key"><span class="material-icons">vpn_key</span> Safe</span></div>
+  <!-- ONE TAP (autofill demo) -->
+  <section class="lp-demo" id="demo">
+    <h2>One tap and you're in</h2>
+    <p class="lp-secsub">No more typing&nbsp;– Safe fills your logins automatically, on every device.</p>
+    <div class="demo-card" id="demo-card">
+      <div class="dp-screen">
+        <div class="dp-title">Sign in</div>
+        <div class="dp-field"><span class="dp-lab">Email</span><div class="dp-input"><span class="v">john.appleseed@gmail.com</span></div></div>
+        <div class="dp-field"><span class="dp-lab">Password</span><div class="dp-input"><span class="v">••••••••••••</span></div></div>
+        <button class="dp-btn" id="demo-btn" data-login="Log in" data-done="✓ Signed in">Log in</button>
       </div>
+      <div class="dp-sheet">
+        <div class="dp-cred sel"><span class="ci"><span class="material-icons">vpn_key</span></span><div><b>john.appleseed@gmail.com</b><span>Gmail</span></div></div>
+        <div class="dp-cred"><span class="ci"><span class="material-icons">vpn_key</span></span><div><b>j.appleseed@work.com</b><span>Gmail · Work</span></div></div>
+      </div>
+      <div class="dp-kb"><span class="dp-key"><span class="material-icons">vpn_key</span> Safe</span></div>
     </div>
   </section>
 
-  <!-- 3. FEATURES -->
-  <section class="feat-sec">
-    <h2 class="section-head">Everything you need<br>to stay secure</h2>
-    <p class="section-sub">Simple to use, strongly encrypted, and fully under your control.</p>
-    <div class="feat-grid-2">
-      <div class="feature-card"><span class="material-icons feature-icon">key</span><h3>Passwords &amp; passkeys, safely stored</h3><p>Everything is encrypted inside your personal vault.</p></div>
-      <div class="feature-card"><span class="material-icons feature-icon">auto_fix_high</span><h3>One-tap autofill</h3><p>Sign in instantly in apps and browsers across your devices.</p></div>
-      <div class="feature-card"><span class="material-icons feature-icon">devices</span><h3>Works on all your devices</h3><p>iOS, Android, Mac and Windows — phone, tablet and desktop, always in sync.</p></div>
-      <div class="feature-card"><span class="material-icons feature-icon">cloud_upload</span><h3>Backup to your own cloud</h3><p>Auto backup to Google Drive, OneDrive, Dropbox or WebDAV.</p></div>
-      <div class="feature-card"><span class="material-icons feature-icon">verified_user</span><h3>Breach check</h3><p>See if your accounts appear in known leaks (powered by Have I Been Pwned).</p></div>
-      <div class="feature-card"><span class="material-icons feature-icon">lock</span><h3>Strong encryption by default</h3><p>Bank-grade protection with AES-256 encryption.</p></div>
+  <!-- FEATURES -->
+  <section class="lp-feats">
+    <h2>Everything you need<br>to stay secure</h2>
+    <p class="lp-secsub">Simple to use, strongly encrypted, and fully under your control.</p>
+    <div class="feat-grid">
+      <div class="fcard"><span class="fic orange"><span class="material-icons">key</span></span><h3>Passwords &amp; Passkeys, Securely Stored</h3><p>Everything is encrypted inside your personal vault.</p></div>
+      <div class="fcard"><span class="fic purple"><span class="material-icons">auto_fix_high</span></span><h3>One-tap autofill</h3><p>Sign in instantly in apps and browsers across your devices.</p></div>
+      <div class="fcard"><span class="fic blue"><span class="material-icons">devices</span></span><h3>Works on All Your Devices</h3><p>Android, iOS, Windows, and macOS — phone, tablet and desktop.</p></div>
+      <div class="fcard"><span class="fic teal"><span class="material-icons">cloud_upload</span></span><h3>Backup &amp; Sync to Your Cloud</h3><p>Auto backup to Google Drive, OneDrive, Dropbox, or WebDAV.</p></div>
+      <div class="fcard"><span class="fic green"><span class="material-icons">verified_user</span></span><h3>Breach check</h3><p>See if passwords or personal data appear in known leaks (powered by Have I Been Pwned).</p></div>
+      <div class="fcard"><span class="fic red"><span class="material-icons">lock</span></span><h3>Strong Encryption by Default</h3><p>Bank-grade protection with AES-256 encryption.</p></div>
     </div>
   </section>
 
-  <!-- 4. TRY SAFE — final CTA -->
-  <section class="final-cta-block">
-    <div class="cta-content">
-      <h2>Try Safe free</h2>
-      <p>Full Premium access. No charge today. Cancel anytime.</p>
-      <a class="button" href="#" onclick="safeOpenTestimonial();return false">Start Free</a>
-    </div>
-    <div class="cta-image"><img src="../assets/brand/close-graphic.png" alt="Your passwords on every device"></div>
+  <!-- MID CTA -->
+  <section class="lp-midcta">
+    <h2>Over 1,000,000 users trust Safe with their passwords and data</h2>
+    <a class="button" href="#" onclick="safeOpenTestimonial();return false">Join them for free →</a>
+    <p class="lp-fineprint">Full Premium access. No charge today. Cancel anytime.</p>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-bottom">
-      <div class="footer-bottom-left">
-        <div class="footer-brand"><a href="#"><img src="../assets/brand/logo.png" alt="">SafeInCloud</a></div>
-        <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
-        <div class="footer-copyright">© 2026 SafeInCloud · Password manager since 2012</div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- ===== SCREEN 2: REVIEWS (between landing and paywall) ===== -->
+<!-- ===== SCREEN 2: REVIEWS ===== -->
 <div class="tm" id="testimonial"><div class="tm-in">
   <button class="x-dark" onclick="safeCloseTestimonial()">×</button>
-  <div class="tm-head">
-    <div class="tm-eyebrow">Loved by users</div>
-    <div class="rev-agg">
-      <img class="rev-stars" src="../assets/brand/five_stars.png" alt="5 stars">
-      <div class="rev-agg-line"><b>4.8★</b> · 1,000,000+ users</div>
-    </div>
+  <div class="ov-logo"><img src="../assets/brand/logo.png" alt="">Safe In Cloud</div>
+  <div class="rev-score">
+    <span class="rscore">4.8</span><img class="rev-stars" src="../assets/brand/five_stars.png" alt="★★★★★">
+    <div class="rcount">42,000+ reviews</div>
   </div>
   <div class="rev-list">
-    <div class="rev big">
-      <img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★">
+    <div class="rev">
+      <div class="rev-top"><span class="rev-av k">K</span><div><div class="rev-name">Ken P.</div><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"></div></div>
       <p>"Honestly the first password manager that just clicked for me. Everything stays in sync between my phone and laptop, autofill is instant, and I finally stopped reusing the same password everywhere. I'd be lost without it."</p>
-      <span class="rev-name">— Ken P.</span>
+    </div>
+    <div class="rev">
+      <div class="rev-top"><span class="rev-av h">H</span><div><div class="rev-name">Helena P.</div><img class="rev-s" src="../assets/brand/five_stars.png" alt="★★★★★"></div></div>
+      <p>"I love having passwords, passkeys, and 2FA codes in one place. It makes logins way quicker, and I'm not juggling three different apps anymore."</p>
     </div>
   </div>
   <a class="button tm-cta" href="#" onclick="safeToPaywall();return false">Continue</a>
 </div></div>
 
-<!-- ===== SCREEN 3: PAYWALL (lean trial paywall) ===== -->
+<!-- ===== SCREEN 3: PAYWALL ===== -->
 <div class="pw" id="paywall"><div class="pw-in">
   <button class="x" onclick="safeClosePaywall()">×</button>
-  <h2>Start your 14-day free trial</h2>
+  <div class="ov-logo"><img src="../assets/brand/logo.png" alt="">Safe In Cloud</div>
+  <h2>Start your 14-day<br>free trial</h2>
   <div class="pw-body">
-    <div class="tl">
-      <div class="row on"><div class="line"></div><div class="dot">✓</div><div class="k">Today</div><div class="v">Full Premium access. No charge now.</div></div>
-      <div class="row"><div class="line"></div><div class="dot">🔔</div><div class="k">Day 12</div><div class="v">We'll remind you before your trial ends.</div></div>
-      <div class="row"><div class="dot">★</div><div class="k">Day 14</div><div class="v">Your Premium subscription begins.</div></div>
+    <div class="tl2">
+      <div class="trow on"><span class="tdot"><span class="material-icons">lock_open</span></span><div class="tx"><b>Today</b><span>Full premium access. No charge.</span></div></div>
+      <div class="trow"><span class="tdot"><span class="material-icons">notifications</span></span><div class="tx"><b>Day 12</b><span>We'll remind you. Cancel anytime.</span></div></div>
+      <div class="trow"><span class="tdot"><span class="material-icons">verified_user</span></span><div class="tx"><b>Day 14</b><span>Premium subscription begins.</span></div></div>
     </div>
-    <div class="pw-price">Then <b>$79.99</b>/year (~$6.67/mo). Cancel anytime.</div>
+    <div class="pw-price">Just <b>$6.67/month</b><br>($79.99 billed yearly)</div>
   </div>
   <div class="start">
-    <a class="button" href="#" onclick="safeStartTrial();return false">Start Free Trial</a>
-    <div class="lock">🔒 No charge today · cancel anytime</div>
+    <a class="button" href="#" onclick="safeStartTrial();return false">Start My Free Trial</a>
     <div id="pw-demo">Demo mode: here the user is sent to the store — paste your Adjust link in <b>assets/config.js</b>.</div>
   </div>
 </div></div>

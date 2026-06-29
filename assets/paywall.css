@@ -1,30 +1,29 @@
-/* "Try Safe for Free" paywall overlay — light, matches the white site.
-   Uses brand tokens from main.css (--accent #ff9500, text/border vars). */
-.pw{position:fixed;inset:0;background:var(--bg-primary);color:var(--text-primary);z-index:200;display:none;overflow-y:auto}
-.pw.open{display:block}
-.pw-in{max-width:440px;margin:0 auto;min-height:100vh;padding:54px 22px 36px;display:flex;flex-direction:column;justify-content:space-between}
-.pw .x{position:absolute;top:14px;right:16px;background:none;border:0;color:var(--text-muted);font-size:28px;line-height:1;cursor:pointer;padding:2px 6px}
-.pw h2{font-size:26px;text-align:center;margin:4px 0 26px;color:var(--text-primary)}
+/* ===== Screen 3 — paywall (Igor design, June 2026) ===== */
+.pw { position:fixed; inset:0; background:#FBF9F6; color:#1b1b1f; z-index:200; display:none; overflow-y:auto; }
+.pw.open { display:block; }
+.pw-in { max-width:440px; margin:0 auto; min-height:100vh; padding:54px 22px 34px; display:flex; flex-direction:column; }
+.pw .x { position:absolute; top:16px; right:20px; background:none; border:0; color:#9a9a9f; font-size:30px; line-height:1; cursor:pointer; }
+.pw .ov-logo { margin-bottom:22px; }
+.pw h2 { font-size:31px; font-weight:800; text-align:center; line-height:1.12; letter-spacing:-.4px; margin:6px 0 30px; color:#1b1b1f; }
 
-/* trial timeline */
-.tl{position:relative;margin:0 6px;padding-left:34px}
-.tl .row{position:relative;padding:0 0 22px}
-.tl .row:last-child{padding-bottom:0}
-.tl .dot{position:absolute;left:-34px;top:1px;width:22px;height:22px;border-radius:50%;background:var(--bg-alt);border:2px solid var(--border-medium);display:flex;align-items:center;justify-content:center;font-size:12px}
-.tl .row.on .dot{background:var(--accent);border-color:var(--accent);color:#fff}
-.tl .line{position:absolute;left:-24px;top:22px;bottom:0;width:2px;background:var(--border-medium)}
-.tl .row:last-child .line{display:none}
-.tl .k{font-weight:700;font-size:15px;color:var(--text-primary)}
-.tl .v{color:var(--text-secondary);font-size:13.5px}
+/* timeline as connected cards */
+.pw-body { display:flex; flex-direction:column; justify-content:center; flex:1; }
+.tl2 { display:flex; flex-direction:column; gap:12px; }
+.trow { background:#fff; border-radius:18px; padding:16px 18px; display:flex; align-items:center; gap:15px; box-shadow:0 3px 14px rgba(0,0,0,.05); position:relative; }
+.trow .tdot { width:48px; height:48px; border-radius:50%; background:#ededed; color:#a2a2a7; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.trow .tdot .material-icons { font-size:25px; }
+.trow.on .tdot { background:var(--accent,#FF9500); color:#fff; box-shadow:0 0 0 7px #FFE5BF; }
+.trow .tx b { display:block; font-size:18px; font-weight:800; line-height:1.15; }
+.trow.on .tx b { color:var(--accent,#FF9500); }
+.trow .tx span { font-size:14.5px; color:#6c6c72; line-height:1.32; }
+/* connector notch between the cards */
+.tl2 .trow:not(:last-child)::after { content:""; position:absolute; left:37px; bottom:-12px; width:3px; height:12px; background:#e6e2db; border-radius:2px; z-index:1; }
 
-/* price line */
-.pw-price{text-align:center;color:var(--text-secondary);font-size:14.5px;margin:22px 0 0}
-.pw-price b{color:var(--text-primary)}
+.pw-price { text-align:center; color:#6c6c72; font-size:15px; line-height:1.55; margin-top:30px; }
+.pw-price b { color:#1b1b1f; font-size:16.5px; }
 
-/* CTA + reassurance */
-.pw .start{padding-top:24px}
-.pw .start .button{display:block;width:100%;text-align:center;font-size:17px;padding:16px}
-.pw .lock{display:flex;align-items:center;justify-content:center;gap:6px;color:#16a34a;font-size:13px;margin-top:12px}
-.pw .legal{text-align:center;color:var(--text-muted);font-size:11px;margin-top:14px}
-.pw .legal a{color:var(--text-secondary)}
-#pw-demo{display:none;text-align:center;color:#b45309;font-size:13px;margin-top:14px;border:1px dashed var(--border-medium);border-radius:10px;padding:10px}
+.pw .start { margin-top:24px; }
+.pw .start .button { display:block; width:100%; text-align:center; font-size:18px; font-weight:800; padding:18px; background:var(--accent,#FF9500); color:#fff; border-radius:999px; }
+.pw .start .button:hover { background:var(--accent-hover,#e68600); }
+.pw .lock { display:flex; align-items:center; justify-content:center; gap:6px; color:#16a34a; font-size:13px; margin-top:13px; }
+#pw-demo { display:none; text-align:center; color:#b45309; font-size:13px; margin-top:14px; border:1px dashed #d8d3cb; border-radius:10px; padding:10px; }
