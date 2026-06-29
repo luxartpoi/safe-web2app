@@ -11,16 +11,27 @@
 <link rel="stylesheet" href="../assets/paywall.css">
 <link rel="stylesheet" href="../assets/landing.css">
 <script src="../assets/config.js"></script>
+<script>
+/* Set --vph to the real visible height (window.innerHeight is reliable cross-browser,
+   incl. Chrome iOS, unlike svh/dvh). Update only on width change (orientation) — never on
+   the chrome show/hide that fires height-only resizes — so screens never resize while scrolling. */
+(function(){function v(){document.documentElement.style.setProperty('--vph',window.innerHeight+'px')}v();var w=window.innerWidth;window.addEventListener('resize',function(){if(window.innerWidth!==w){w=window.innerWidth;v()}},{passive:true});window.addEventListener('orientationchange',v);window.addEventListener('load',v)})();
+</script>
 </head>
 <body>
 
 <main class="lp2">
 
-  <!-- LANDING top: hero + "One tap" heading (pixel-exact image) -->
-  <div class="screen">
-    <img src="../assets/design/landing-top.png" alt="SafeInCloud — Password Manager">
-    <a class="hot" style="top:77%;left:7%;width:86%;height:6.5%" href="#" onclick="safeOpenTestimonial();return false" aria-label="Start free"></a>
-  </div>
+  <!-- LANDING hero: fits the viewport so "Start free" is always above the browser chrome -->
+  <section class="hero-screen">
+    <div class="hero-fit">
+      <img src="../assets/design/hero.png" alt="SafeInCloud — Password Manager">
+      <a class="hot" style="top:89%;left:7%;width:86%;height:7.2%" href="#" onclick="safeOpenTestimonial();return false" aria-label="Start free"></a>
+    </div>
+  </section>
+
+  <!-- "One tap and you're in" heading (pixel-exact image) -->
+  <img class="demo-head" src="../assets/design/demo-head.png" alt="One tap and you're in">
 
   <!-- live autofill demo (animation, in the excised demo slot) -->
   <div class="demo-wrap" id="demo">

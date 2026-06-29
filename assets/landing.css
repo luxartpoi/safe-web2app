@@ -1,10 +1,18 @@
 /* ===== web2app landing — pixel-exact via Igor's screen exports ===== */
 :root { --lp-bg:#FBF9F6; }
-html, body { background:var(--lp-bg); }
+html, body { background:var(--lp-bg); margin:0; }
 .lp2 { max-width:440px; margin:0 auto; padding:0; }
 
 .screen { position:relative; display:block; line-height:0; }
 .screen > img { width:100%; display:block; }
+
+/* hero = fit-to-viewport first screen so "Start free" is always above the browser chrome
+   (incl. Chrome iOS, whose top bar + bottom toolbar leave the least visible height).
+   --vph is set by JS to window.innerHeight (reliable cross-browser); svh is the fallback. */
+.hero-screen { display:flex; align-items:center; justify-content:center; height:var(--vph,100svh); margin:0; }
+.hero-fit { position:relative; display:inline-block; line-height:0; }
+.hero-fit img { width:auto; height:auto; max-width:min(100vw,440px); max-height:var(--vph,100svh); display:block; }
+.demo-head { display:block; width:100%; max-width:440px; margin:0 auto; }
 
 /* transparent tap zones over the buttons baked into the images */
 .hot { position:absolute; display:block; cursor:pointer; z-index:2; }
@@ -44,4 +52,4 @@ html, body { background:var(--lp-bg); }
 .pw { z-index:200; }
 .tm.open, .pw.open { display:flex; align-items:flex-start; justify-content:center; }
 .ov-screen { position:relative; line-height:0; }
-.ov-screen img { display:block; width:auto; height:auto; max-width:min(100vw,440px); max-height:100vh; max-height:100svh; }
+.ov-screen img { display:block; width:auto; height:auto; max-width:min(100vw,440px); max-height:100vh; max-height:var(--vph,100svh); }
