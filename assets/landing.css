@@ -1,7 +1,7 @@
 /* ===== web2app landing — pixel-exact via Igor's screen exports ===== */
 :root { --lp-bg:#FBF9F6; }
 html, body { background:var(--lp-bg); }
-.lp2 { max-width:440px; margin:0 auto; }
+.lp2 { max-width:440px; margin:0 auto; padding:0; }
 
 .screen { position:relative; display:block; line-height:0; }
 .screen > img { width:100%; display:block; }
