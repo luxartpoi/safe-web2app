@@ -9,7 +9,7 @@ html, body { background:var(--lp-bg); margin:0; }
 /* hero = fit-to-viewport first screen so "Start free" is always above the browser chrome
    (incl. Chrome iOS, whose top bar + bottom toolbar leave the least visible height).
    --vph is set by JS to window.innerHeight (reliable cross-browser); svh is the fallback. */
-.hero-screen { display:flex; align-items:center; justify-content:center; height:var(--vph,100svh); margin:0; }
+.hero-screen { display:flex; align-items:flex-start; justify-content:center; height:var(--vph,100svh); margin:0; }
 .hero-fit { position:relative; display:inline-block; line-height:0; }
 .hero-fit img { width:auto; height:auto; max-width:min(100vw,440px); max-height:var(--vph,100svh); display:block; }
 .demo-head { display:block; width:100%; max-width:440px; margin:0 auto; }
